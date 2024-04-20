@@ -37,7 +37,6 @@ export default function Dashboard() {
     console.log("clicked outside");
   };
 
-
   useOnClickOutside(ref, handleClickOutside);
 
   const formatDuration = (duration_ms: number) => {
@@ -97,9 +96,9 @@ export default function Dashboard() {
               >
                 Season 1
               </AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent className="mostly-customized-scrollbar">
                 <ScrollArea style={{ maxHeight: "500px", overflowY: "auto" }}>
-                  <ul className="gap-4">
+                  <ul className={`mostly-customized-scrollbar gap-4`}>
                     {season1.map((item) => (
                       <li key={item.id}>
                         <Card className="flex flex-row py-2">
@@ -111,7 +110,7 @@ export default function Dashboard() {
                                   rel="noreferrer"
                                   target="_blank"
                                 >
-                                  {item.name}
+                                  <p>{item.name}</p>
                                 </Link>
                               </CardTitle>
                             </CardHeader>

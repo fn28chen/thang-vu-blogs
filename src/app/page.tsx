@@ -6,14 +6,13 @@ const Home = (props: {}) => {
     <div className="w-full min-h-screen pt-4 px-8 flex flex-col justify-center items-center relative">
       <section
         className="
-        flex flex-col-reverse 
-        lg:flex-row md:flex-row 
-        w-full min-h-screen z-50 justify-between items-start 
-        lg:pl-24 lg:pr-8 gap-4
+        flex flex-row justify-between
+        fixed top-0 w-full h-full z-50 px-8 pt-12 pb-12 xl:w-[50%] lg:pl-8 lg:pr-8 lg:w-[calc(50% + 20vw)] md:pl-8 md:pr-8 md:w-[60%] sm:w-[60%]
+        min-h-screen p-8 relative
         "
       >
         <div className="leading-none">
-          <h2 className="dark:text-zinc-200 text-zinc-900 text-[2.5rem] m-0 font-extrabold">
+          <h2 className="dark:text-zinc-200 text-zinc-900 text-[48px] m-0 font-extrabold">
             Vu Nguyen Duc Thang
           </h2>
           <p className="dark:text-zinc-300 text-zinc-800 mb-4 m-0"></p>
