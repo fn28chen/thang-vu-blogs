@@ -14,8 +14,8 @@ export default function Links() {
           </p>
         </div>
         <LinksComponent />
+        <Footer />
       </section>
-      <Footer />
     </div>
   );
 }

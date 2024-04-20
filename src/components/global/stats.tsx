@@ -38,7 +38,12 @@ export default function Stats() {
     {
       title: "My Age",
       value: age,
-      link: "https://asrvd.me/about",
+      link: "/about",
+    },
+    {
+      title: "My Achievement",
+      value: "I'm still alive",
+      link: "/about",
     },
   ];
 
