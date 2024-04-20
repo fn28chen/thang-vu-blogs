@@ -1,8 +1,7 @@
-import { MDXProvider } from '@mdx-js/react';
-
 export const metadata = {
-  title: "Now",
-  description: "What I'm doing now.",
+  title: "About Me",
+  description: "About me and my journey.",
+  icon: "/",
 };
 export default function AboutLayout({
   children,

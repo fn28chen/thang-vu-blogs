@@ -1,6 +1,5 @@
-'use client';
+"use client";
 import AboutMe from "@/content/about-me.mdx";
-import twMerge from "tailwind-merge"
 export default function About() {
   return (
     <div className="relative flex h-full min-h-screen w-full flex-col items-center p-8">
