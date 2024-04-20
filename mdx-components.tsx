@@ -78,7 +78,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <code
         style={{
           backgroundColor: "zinc",
-          color: "black",
           padding: "4px",
           borderRadius: "4px",
         }}
