@@ -1,14 +1,14 @@
+import Footer from "@/components/layout/footer";
 import Image from "next/image";
 
 const Home = (props: {}) => {
   return (
-    <div className="w-full h-full p-8 flex flex-col justify-center items-center relative">
+    <div className="w-full min-h-screen pt-4 px-8 flex flex-col justify-center items-center relative">
       <section
         className="
         flex flex-col-reverse 
         lg:flex-row md:flex-row 
         w-full min-h-screen z-50 justify-between items-start 
-        mb-20 mt-8
         lg:pl-24 lg:pr-8 gap-4
         "
       >
@@ -31,6 +31,7 @@ const Home = (props: {}) => {
             height={128}
           />
         </div>
+        <Footer />
       </section>
     </div>
   );

@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/layout/footer";
 import NowMD from "@/content/now-md.mdx";
 export default function Now() {
   return (
@@ -11,6 +12,7 @@ export default function Now() {
             {new Date().toLocaleDateString()}
           </span>
         </p>
+        <Footer/>
       </section>
     </div>
   );
