@@ -42,7 +42,7 @@ export default function Stats() {
     },
     {
       title: "My Achievement",
-      value: "I'm still alive",
+      value: "I'm still alive and coding is my hobby, I am still gud, learning, growing and improving.",
       link: "/about",
     },
   ];
@@ -53,7 +53,7 @@ export default function Stats() {
         statCards.map((card, index) => {
           return (
             <div
-              className="flex flex-col justify-between gap-2 rounded-lg bg-gradient-to-r from-neutral-200 to-zinc-200 p-4 shadow-xl dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800"
+              className="flex flex-col gap-2 rounded-lg bg-gradient-to-r from-neutral-200 to-zinc-200 p-4 shadow-xl dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800"
               key={index}
             >
               <a

@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useRef, useState } from "react";
-import { useClickAway } from "react-use";
-
+import { useEffect, useRef, useState } from "react";
+import { useOnClickOutside } from "usehooks-ts";
 import Stats from "@/components/global/stats";
 import Footer from "@/components/layout/footer";
 import spotifyData from "@/content/spotify.json";
@@ -30,12 +29,16 @@ export default function Dashboard() {
   // Use axios to fetch data from Spotify API
   // Example: https://api.spotify.com/v1/shows/{id}/episodes
   // with id = 4gNDdUh9g9ylzs00ODQd0Z
-  const ref = useRef(null);
-  const [openItem, setOpenItem] = useState<string | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
+  const [openItem, setOpenItem] = useState<string>("");
 
-  useClickAway(ref, () => {
-    setOpenItem(null);
-  });
+  const handleClickOutside = () => {
+    setOpenItem("");
+    console.log("clicked outside");
+  };
+
+
+  useOnClickOutside(ref, handleClickOutside);
 
   const formatDuration = (duration_ms: number) => {
     const minutes = Math.floor(duration_ms / 60000);
@@ -68,7 +71,10 @@ export default function Dashboard() {
           </p>
         </div>
         <Stats />
-        <div className="flex flex-col justify-between gap-4 rounded-lg bg-gradient-to-r from-neutral-200 to-zinc-200 p-4 shadow-xl dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 overflow-auto">
+        <div
+          className="flex flex-col justify-between gap-4 rounded-lg bg-gradient-to-r from-neutral-200 to-zinc-200 p-4 shadow-xl dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 overflow-auto"
+          ref={ref}
+        >
           <a
             className="m-0 flex gap-4 text-zinc-700 dark:text-zinc-400"
             href="https://open.spotify.com/show/4gNDdUh9g9ylzs00ODQd0Z"
@@ -78,13 +84,19 @@ export default function Dashboard() {
             My Spotify's podcast <FiExternalLink />
           </a>
           <Accordion
-            ref={ref}
             type="single"
             collapsible
             className="w-full max-h-[650px]"
+            value={openItem}
           >
             <AccordionItem value={"item-1"}>
-              <AccordionTrigger>Season 1</AccordionTrigger>
+              <AccordionTrigger
+                onClick={() =>
+                  setOpenItem(openItem === "item-1" ? "" : "item-1")
+                }
+              >
+                Season 1
+              </AccordionTrigger>
               <AccordionContent>
                 <ScrollArea style={{ maxHeight: "500px", overflowY: "auto" }}>
                   <ul className="gap-4">
@@ -93,13 +105,14 @@ export default function Dashboard() {
                         <Card className="flex flex-row py-2">
                           <div>
                             <CardHeader className="flex flex-row justify-between">
-                              <CardTitle>{item.name}</CardTitle>
-                              <CardTitle className="ml-auto">
-                                <Button variant="link" rel="noreferrer">
-                                  <Link href={item.external_urls.spotify}>
-                                    <FiExternalLink />
-                                  </Link>
-                                </Button>
+                              <CardTitle className="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 focus:outline-none focus:ring focus:ring-green-300">
+                                <Link
+                                  href={item.external_urls.spotify}
+                                  rel="noreferrer"
+                                  target="_blank"
+                                >
+                                  {item.name}
+                                </Link>
                               </CardTitle>
                             </CardHeader>
                             <CardContent>
@@ -115,7 +128,13 @@ export default function Dashboard() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value={"item-2"}>
-              <AccordionTrigger>Season 2</AccordionTrigger>
+              <AccordionTrigger
+                onClick={() =>
+                  setOpenItem(openItem === "item-2" ? '' : "item-2")
+                }
+              >
+                Season 2
+              </AccordionTrigger>{" "}
               <AccordionContent>
                 <ScrollArea style={{ maxHeight: "500px", overflowY: "auto" }}>
                   <ul className="gap-4">
@@ -124,13 +143,14 @@ export default function Dashboard() {
                         <Card className="flex flex-row py-2">
                           <div>
                             <CardHeader className="flex flex-row justify-between">
-                              <CardTitle>{item.name}</CardTitle>
-                              <CardTitle className="ml-auto">
-                                <Button variant="link" rel="noreferrer">
-                                  <Link href={item.external_urls.spotify}>
-                                    <FiExternalLink />
-                                  </Link>
-                                </Button>
+                              <CardTitle className="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 focus:outline-none focus:ring focus:ring-green-300">
+                                <Link
+                                  href={item.external_urls.spotify}
+                                  rel="noreferrer"
+                                  target="_blank"
+                                >
+                                  {item.name}
+                                </Link>
                               </CardTitle>
                             </CardHeader>
                             <CardContent>
