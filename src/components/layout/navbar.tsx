@@ -42,6 +42,11 @@ const NavbarItems = [
     slug: "/dashboard",
     icon: FiZap,
   },
+  {
+    name: "Blogs",
+    slug: "/blogs",
+    icon: FiBookOpen,
+  }
 ];
 
 export default function NavBar() {
