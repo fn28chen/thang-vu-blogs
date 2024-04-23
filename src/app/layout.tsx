@@ -26,10 +26,12 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex w-full h-full">
-            <div className="w-[6%] h-full z-50 lg:flex md:flex hidden">
-              <NavBar />
+            <div className="fixed w-[6%] h-full z-50 lg:flex md:flex hidden">
+              <NavBar/>
             </div>
-            <div className="flex w-full px-4 items-center justify-center">{children}</div>
+            <div className="flex w-full px-4 items-center justify-center">
+              {children}
+            </div>
           </div>
         </ThemeProvider>
       </body>
