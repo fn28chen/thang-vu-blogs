@@ -67,9 +67,10 @@ export default function Blog() {
               <ArrowLeft size={24} />
             </Button>
             <p className="dark:text-zinc-200 text-zinc-900 leading-none mb-3 text-4xl font-bold">
-              {pathname
+              {/* {pathname
                 .replace(/_/g, " ")
-                .replace(/\b\w/g, (char) => char.toUpperCase())}
+                .replace(/\b\w/g, (char) => char.toUpperCase())} */}
+              Blogs
             </p>
           </div>
           <div
@@ -79,10 +80,10 @@ export default function Blog() {
             {blogs?.length > 0 ? (
               blogs.map((post) => (
                 <div key={post._id} className="p-4">
-                  <h2 className="p-4">{post.title}</h2>
-                  <p className="p-4">{post.description}</p>
-                  <p className="p-4">{post._createdAt}</p>
-                  <p className="p-4">{post.categories.categoryTitle}</p>
+                  <h2 className="">{post.title}</h2>
+                  <p className="">{post.description}</p>
+                  <p className="">{post._createdAt}</p>
+                  <p className="">{post.categories.categoryTitle}</p>
                   <p className="p-4">{post.author.name}</p>
                   <PortableText value={post.body} components={components} />
                 </div>

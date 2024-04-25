@@ -4,6 +4,13 @@ export interface ICardProps {
   description: string;
   _createdAt: string;
   slug: string;
+  author: {
+    name: string;
+  };
+  categories: {
+    categoryTitle: string;
+  };
+  
 }
 
 export interface IProjCardProps extends ICardProps {
