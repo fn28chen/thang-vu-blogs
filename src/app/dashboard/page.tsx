@@ -80,7 +80,7 @@ export default function Dashboard() {
             target="_blank"
             rel="noreferrer"
           >
-            My Spotify's podcast <FiExternalLink />
+            My Spotify podcast <FiExternalLink />
           </a>
           <Accordion
             type="single"
