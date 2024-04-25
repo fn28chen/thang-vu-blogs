@@ -1,11 +1,12 @@
-interface ICardProps {
-  id: number | string;
-  content_section: "Projects" | "Blogs";
+export interface ICardProps {
+  _id: string;
   title: string;
+  description: string;
+  _createdAt: string;
+  slug: string;
 }
 
 export interface IProjCardProps extends ICardProps {
-  description: string[];
   tools: string[];
   demoURL?: string;
   githubURL?: string;

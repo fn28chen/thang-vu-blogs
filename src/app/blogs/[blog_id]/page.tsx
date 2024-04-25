@@ -1,46 +1,62 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useEffect, useRef, useState } from "react";
-import { useOnClickOutside } from "usehooks-ts";
+import { useEffect, useState } from "react";
 import Footer from "@/components/layout/footer";
-import path from "path";
-import dynamic from "next/dynamic";
-
-import { BLOG_INFO_DICT } from "@/lib/general_info";
-import { IBlogCardProps } from "@/lib/type/card";
+import { Post } from "../../../../sanity/lib/interface";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import { readClient } from "../../../../sanity/lib/client";
+import { PortableText } from "@portabletext/react";
+import urlBuilder from "@sanity/image-url";
+import { createClient } from "next-sanity";
+import { getImageDimensions } from "@sanity/asset-utils";
+import { apiVersion, dataset, projectId, useCdn } from "../../../../sanity/env";
 
 export default function Blog() {
   const pathname = usePathname()
     .split("/")
     .slice(usePathname().split("/").indexOf("blogs") + 1)[0];
-  const blog = BLOG_INFO_DICT[pathname];
-  const filePath = path.join(
-    process.cwd(),
-    "src",
-    "content",
-    "markdown",
-    blog.file
-  );
-
-  console.log(pathname);
-  console.log(blog);
-
-  const [DynamicComponent, setDynamicComponent] =
-    useState<React.ComponentType<{}> | null>(null);
+  const [blogs, setBlogs] = useState<Post[]>([]);
+  const client = createClient({
+    apiVersion,
+    dataset,
+    projectId,
+    useCdn,
+  });
 
   useEffect(() => {
-    const importComponent = async () => {
-      const component = await dynamic(
-        () => import(`@/content/markdown/${blog.file}`)
-      );
-      setDynamicComponent(() => component);
+    const fetchBlogs = async () => {
+      const response = await readClient.fetch(`*[_type == "post"]`);
+      setBlogs(response);
     };
-
-    importComponent();
+    fetchBlogs();
   }, []);
+
+  const SampleImageComponent = ({ value, isInline }: { value: any, isInline: boolean }) => {
+    const { width, height } = getImageDimensions(value);
+    return (
+      <img
+        src={urlBuilder(client)
+          .image(value)
+          .width(isInline ? 100 : 800)
+          .fit("max")
+          .auto("format")
+          .url()}
+        alt={value.alt || " "}
+        loading="lazy"
+        style={{
+          display: isInline ? "inline-block" : "block",
+          aspectRatio: width / height,
+        }}
+      />
+    );
+  };
+  const components = {
+    types: {
+      image: SampleImageComponent,
+    },
+  };
 
   return (
     <div className="w-full h-full p-8 flex flex-col items-center relative">
@@ -60,7 +76,20 @@ export default function Blog() {
             className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar text-justify px-2"
             style={{ maxHeight: "80vh" }}
           >
-            {DynamicComponent && <DynamicComponent />}
+            {blogs?.length > 0 ? (
+              blogs.map((post) => (
+                <div key={post._id} className="p-4">
+                  <h2 className="p-4">{post.title}</h2>
+                  <p className="p-4">{post.description}</p>
+                  <p className="p-4">{post._createdAt}</p>
+                  <p className="p-4">{post.categories.categoryTitle}</p>
+                  <p className="p-4">{post.author.name}</p>
+                  <PortableText value={post.body} components={components} />
+                </div>
+              ))
+            ) : (
+              <div className="p-4">Loading...</div>
+            )}
           </div>
         </div>
         <Footer />

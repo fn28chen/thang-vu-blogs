@@ -2,9 +2,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { useOnClickOutside } from "usehooks-ts";
-import Stats from "@/components/global/stats";
 import Footer from "@/components/layout/footer";
-import spotifyData from "@/content/spotify.json";
 import Link from "next/link";
 
 // import Card from "@/components/layout/cardBase";
@@ -13,22 +11,28 @@ import { Card } from "@/components/ui/card";
 import { FiExternalLink } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import { BLOG_INFO_DICT } from "@/lib/general_info";
-import { IBlogCardProps } from "@/lib/type/card";
-
+import { ICardProps } from "@/lib/type/card";
+import { readClient } from "../../../sanity/lib/client";
 export default function Blogs() {
-  // Use axios to fetch data from Spotify API
-  // Example: https://api.spotify.com/v1/shows/{id}/episodes
-  // with id = 4gNDdUh9g9ylzs00ODQd0Z
   const ref = useRef<HTMLDivElement>(null);
   const [openItem, setOpenItem] = useState<string>("");
-  const [blogs, setBlogs] = useState<string[]>([]);
+  const [blogs, setBlogs] = useState<ICardProps[]>([]);
+
+  // Handle Click Outside
   const handleClickOutside = () => {
     setOpenItem("");
     console.log("clicked outside");
   };
-
   useOnClickOutside(ref, handleClickOutside);
 
+  // Fetch data from Sanity
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      const response = await readClient.fetch(`*[_type == "post"]`);
+      setBlogs(response);
+    };
+    fetchBlogs();
+  }, []);
   return (
     <div className="w-full h-full p-8 flex flex-col items-center relative">
       <section className="flex flex-col w-full justify-between mt-16 lg:mt-0 md:mt-0 prose prose-a:no-underline gap-6 mb-12">
@@ -41,28 +45,33 @@ export default function Blogs() {
           </p>
         </div>
         <div className="flex flex-col gap-6">
-          {Object.values(BLOG_INFO_DICT).map((blog: IBlogCardProps) => (
-            <Card
-              key={blog.id}
-              className="flex flex-row text-justify px-4 py-4 gap-4"
-            >
-              <span>
-                <h2 className="font-bold text-2xl">{blog.title}</h2>
-                <p>{blog.brief_description}</p>
-                <p>{blog.date.toDateString()}</p>
-              </span>
-              <span className="ml-auto items-center justify-center">
-                <Link href={"/blogs" + blog.url}>
+          {blogs?.length > 0 ? (
+            blogs.map((post) => (
+              <Card
+                key={post._id}
+                className="flex flex-row text-justify justify-between px-4 py-4 gap-4"
+              >
+                <span className="flex flex-col gap-2">
+                  <h2 className="font-bold text-2xl">{post.title}</h2>
+                  <p className="">{post.description}</p>
+                  <p className="">{post._createdAt}</p>
+                </span>
+                <Link
+                  href={
+                    post.slug
+                      ? `/blogs/${(post.slug as any).current}`
+                      : "/blogs"
+                  }
+                >
                   <Button>
                     Read More <FiExternalLink />
                   </Button>
                 </Link>
-              </span>
-            </Card>
-          ))}
-          {/* {blogs.map((blogId, index) => {
-            return <Card key={index} {...BLOG_INFO_DICT[blogId]} />;
-          })} */}
+              </Card>
+            ))
+          ) : (
+            <div className="p-4 text-red-500">No posts found</div>
+          )}
         </div>
 
         <Footer />

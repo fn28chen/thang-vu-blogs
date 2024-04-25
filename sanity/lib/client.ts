@@ -8,6 +8,11 @@ export const readClient = createClient({
   dataset,
   projectId,
   useCdn,
+  perspective: "published",
+  stega: {
+    enabled: false,
+    studioUrl: "/studio",
+  },
 });
 
 // export const writeClient = createClient({
