@@ -1,0 +1,394 @@
+{
+  "href": "https://api.spotify.com/v1/shows/4gNDdUh9g9ylzs00ODQd0Z/episodes?offset=0&limit=20&locale=vi-VN%2Cvi%3Bq%3D0.9%2Cen-US%3Bq%3D0.8%2Cen%3Bq%3D0.7",
+  "limit": 20,
+  "total": 9,
+  "items": [
+    {
+      "season": 2,
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/4dqXUmXXOUcojtPVv3Ipzi/clip_281763_341763.mp3",
+      "description": "Thi thố là thứ ai cũng trải qua ít nhất vài lần trong đời. Dù đỗ hay trượt thì cũng sẽ để lại nhiều bài học đắt giá. Thông qua tập này, hy vọng rằng các bạn sẽ tìm được nhiều động lực hơn trong việc chinh phục đỉnh cao mới - bên cạnh đó là có được chiếc cúp cả trong lòng cũng như ngoài đời thực. Chúc các bạn sẽ thành công!  CHI TIẾT CÁC PHẦN: 00:00 : Lời chào, mở đầu 03:00: Đi tìm thế mạnh bản thân 04:00: Ai cũng có thể là quán quân! 05:15: 1. Những bước đầu tiên không bao giờ là dễ dàng 09:25: 2. Thất bại là để suy ngẫm 12:05: 3. Đồng đội thực sự là quan trọng 21:15: Chốt lại phần 3 21:45: 4. Thi thố chỉ là chuẩn bị cho khởi đầu mới. 24:05: Lời kết  ------- Xem thêm về mình tại đây nhé: https://linktr.ee/Vunguyenducthang⁠ ⁠https://www.instagram.com/sun_sett_radio     ---   Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "html_description": "<p>Thi thố là thứ ai cũng trải qua ít nhất vài lần trong đời. Dù đỗ hay trượt thì cũng sẽ để lại nhiều bài học đắt giá. Thông qua tập này, hy vọng rằng các bạn sẽ tìm được nhiều động lực hơn trong việc chinh phục đỉnh cao mới - bên cạnh đó là có được chiếc cúp cả trong lòng cũng như ngoài đời thực.</p><br/><p>Chúc các bạn sẽ thành công!</p><br/><p><br/>CHI TIẾT CÁC PHẦN:<br/>00:00 : Lời chào, mở đầu</p><br/><p>03:00: Đi tìm thế mạnh bản thân</p><br/><p>04:00: Ai cũng có thể là quán quân!</p><br/><p>05:15: 1. Những bước đầu tiên không bao giờ là dễ dàng</p><br/><p>09:25: 2. Thất bại là để suy ngẫm</p><br/><p>12:05: 3. Đồng đội thực sự là quan trọng</p><br/><p>21:15: Chốt lại phần 3<br/>21:45: 4. Thi thố chỉ là chuẩn bị cho khởi đầu mới.</p><br/><p>24:05: Lời kết<br/></p><br/><p>-------</p><br/><p>Xem thêm về mình tại đây nhé:</p><br/><p><a href=\"https://linktr.ee/Vunguyenducthang\" rel=\"nofollow\">⁠https://linktr.ee/Vunguyenducthang⁠</a></p><br/><p><a href=\"https://www.instagram.com/sun_sett_radio\" rel=\"nofollow\">⁠https://www.instagram.com/sun_sett_radio</a></p><br/><p><br/></p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "duration_ms": 1678665,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/3KQiSSXhvOPa0C2c9P29jV"
+      },
+      "href": "https://api.spotify.com/v1/episodes/3KQiSSXhvOPa0C2c9P29jV",
+      "id": "3KQiSSXhvOPa0C2c9P29jV",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6765630000ba8ab44f8d36d88c514c01088e1b",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67656300005f1fb44f8d36d88c514c01088e1b",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6765630000f68db44f8d36d88c514c01088e1b",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "vi",
+      "languages": ["vi"],
+      "name": "Season 2 - Episode 2: Mỗi một lần thi, thêm một lần lớn, cần gì để chiến thắng ?",
+      "release_date": "2024-02-25",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:3KQiSSXhvOPa0C2c9P29jV"
+    },
+    {
+      "season": 2,
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/1QGvncpPWrBGmogDnnJGZb/clip_556460_616460.mp3",
+      "description": "Tuổi 30 là tuổi mà hạt giống đầu tiên chúng ta gieo dần trở thành cái cây lớn. Tuổi 30 cũng đi cùng với nhiều trách nhiệm và hoài bão lớn lao hơn, đem đến nhiều giá trị hơn cho cộng đồng và xã hội.  Vậy liệu ở tuổi 22 hay trẻ hơn hiện tại, chúng ta sẽ cần chuẩn bị những gì cho hành trình đầy gian nan đó ? Hãy đến đây khám phá xem đó là gì nhé ^ ^  CHI TIẾT CÁC PHẦN:  00: 00: Lời chào – Mở đầu 02:00: Lãnh đạo tuổi 30 03:00: Quản lý có dành cho người trẻ? 04:30: Sự thay đổi trong tìm kiếm leader 06:00: Nhiệt huyết và máu lửa, liệu đã đủ ? 08:40: Khả năng thích ứng sớm 12:25: Tư duy quản lý sớm và văn hóa DN  16:15: Quản lý không dành cho tất cả 17:55: Lời kết   ------- Xem thêm về mình tại đây nhé: https://linktr.ee/Vunguyenducthang https://www.instagram.com/sun_sett_radio    ---   Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "html_description": "<p>Tuổi 30 là tuổi mà hạt giống đầu tiên chúng ta gieo dần trở thành cái cây lớn. Tuổi 30 cũng đi cùng với nhiều trách nhiệm và hoài bão lớn lao hơn, đem đến nhiều giá trị hơn cho cộng đồng và xã hội.</p><br/><p><br /></p><br/><p>Vậy liệu ở tuổi 22 hay trẻ hơn hiện tại, chúng ta sẽ cần chuẩn bị những gì cho hành trình đầy gian nan đó ? Hãy đến đây khám phá xem đó là gì nhé ^ ^<br/></p><br/><p>CHI TIẾT CÁC PHẦN:<br/></p><br/><p>00: 00: Lời chào – Mở đầu</p><br/><p>02:00: Lãnh đạo tuổi 30</p><br/><p>03:00: Quản lý có dành cho người<br/>trẻ?</p><br/><p>04:30: Sự thay đổi trong tìm kiếm<br/>leader</p><br/><p>06:00: Nhiệt huyết và máu lửa, liệu<br/>đã đủ ?</p><br/><p>08:40: Khả năng thích ứng sớm</p><br/><p>12:25: Tư duy quản lý sớm và văn<br/>hóa DN </p><br/><p>16:15: Quản lý không dành cho tất<br/>cả</p><br/><p>17:55: Lời kết</p><br/><p><br/></p><br/><p>-------</p><br/><p>Xem thêm về mình tại đây nhé:</p><br/><p><a href=\"https://linktr.ee/Vunguyenducthang\" rel=\"nofollow\">https://linktr.ee/Vunguyenducthang</a></p><br/><p><a href=\"https://www.instagram.com/sun_sett_radio\" rel=\"nofollow\">https://www.instagram.com/sun_sett_radio</a><br/></p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "duration_ms": 1219337,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/0E3xu7R7AKiGO0AXlDwA23"
+      },
+      "href": "https://api.spotify.com/v1/episodes/0E3xu7R7AKiGO0AXlDwA23",
+      "id": "0E3xu7R7AKiGO0AXlDwA23",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6765630000ba8a4679d710353d800680336b2d",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67656300005f1f4679d710353d800680336b2d",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6765630000f68d4679d710353d800680336b2d",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "vi",
+      "languages": ["vi"],
+      "name": "Season 2 - Episode 1: Lãnh đạo tuổi 30 - máu lửa và nhiệt huyết liệu đã đủ?",
+      "release_date": "2024-02-18",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:0E3xu7R7AKiGO0AXlDwA23"
+    },
+    {
+      "season": 1,
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/4iXo9MAbZkAisDRryrH256/clip_654388_714388.mp3",
+      "description": "Chỉ là đi mỏi chân thì cần nghỉ ngơi thôi ^^  Chúc mừng sinh nhật Dawn of Finance  Nếu bạn loay hoay trong guồng quay của mọi thứ, hãy ngoảnh lại và xem xem đâu là nơi luôn có người chờ bạn nhé!   ------- Xem thêm về mình tại đây nhé: ⁠⁠Sunsettradio Instagram⁠⁠ ⁠⁠Facebook⁠⁠ ⁠⁠Youtube⁠⁠ ⁠⁠Tiktok   ---   Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "html_description": "<p>Chỉ là đi mỏi chân thì cần nghỉ ngơi thôi ^^</p><br/><p><br /></p><br/><p>Chúc mừng sinh nhật Dawn of Finance</p><br/><p><br /></p><br/><p>Nếu bạn loay hoay trong guồng quay của mọi thứ, hãy ngoảnh lại và xem xem đâu là nơi luôn có người chờ bạn nhé! </p><br/><p><br /></p><br/><p>-------</p><br/><p>Xem thêm về mình tại đây nhé:</p><br/><p><a href=\"https://www.instagram.com/sun_sett_radio/\" rel=\"nofollow\">⁠⁠Sunsettradio Instagram⁠⁠</a></p><br/><p><a href=\"https://www.facebook.com/profile.php?id&#61;100035288013297\" rel=\"nofollow\">⁠⁠Facebook⁠⁠</a></p><br/><p><a href=\"https://www.youtube.com/channel/UC74KzZEDspHTNvKIjwl1Kmw\" rel=\"nofollow\">⁠⁠Youtube⁠⁠</a></p><br/><p><a href=\"https://www.tiktok.com/&#64;vuthang_sunset?fbclid&#61;IwAR0knrgoPXX6bA6-p3CDXwSsq4LYsPdsHyUoLQuCtvrDzNYqgK_a63saGUc\" rel=\"nofollow\">⁠⁠Tiktok</a></p><br/><p><br /></p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "duration_ms": 768920,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/07baN2YxNdWfbIwPM3zKd8"
+      },
+      "href": "https://api.spotify.com/v1/episodes/07baN2YxNdWfbIwPM3zKd8",
+      "id": "07baN2YxNdWfbIwPM3zKd8",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6765630000ba8a19dbfbcf5501dc2d9c913eab",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67656300005f1f19dbfbcf5501dc2d9c913eab",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6765630000f68d19dbfbcf5501dc2d9c913eab",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "vi",
+      "languages": ["vi"],
+      "name": "Season 1 - Episode 7: Nơi chúng ta thuộc về",
+      "release_date": "2023-09-16",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:07baN2YxNdWfbIwPM3zKd8"
+    },
+    {
+      "season": 1,
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/0R7pDNSFdW1PHor2MHFXI4/clip_205063_265063.mp3",
+      "description": "Khi nhắc đến chứng khoán - câu nói gì đầu tiên của bố mẹ mà bạn liên tưởng tới. \"Mày đừng có dây vào cái này\"\"Cái này là trò cờ bạc đấy\"\"Biết gì mấy cái này mà xem\"\"Tập trung lo học hành đi - làm mấy cái này làm gì mất thời gian\" vân vân và mây mây Vậy, hôm nay chúng ta sẽ cùng thử đi thuyết phục phụ huynh xem - liệu chứng khoán có phải là cờ bạc không nha!   ------- Xem thêm về mình tại đây nhé: ⁠Sunsettradio Instagram⁠ ⁠Facebook⁠ ⁠Youtube⁠ ⁠Tiktok   ---   Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "html_description": "<p>Khi nhắc đến chứng khoán - câu nói gì đầu tiên của bố mẹ mà bạn liên tưởng tới.</p><br/><p><br />&#34;Mày đừng có dây vào cái này&#34;<br />&#34;Cái này là trò cờ bạc đấy&#34;<br />&#34;Biết gì mấy cái này mà xem&#34;<br />&#34;Tập trung lo học hành đi - làm mấy cái này làm gì mất thời gian&#34;</p><br/><p><br />vân vân và mây mây</p><br/><p><br />Vậy, hôm nay chúng ta sẽ cùng thử đi thuyết phục phụ huynh xem - liệu chứng khoán có phải là cờ bạc không nha!<br/></p><br/><p>-------</p><br/><p>Xem thêm về mình tại đây nhé:</p><br/><p><a href=\"https://www.instagram.com/sun_sett_radio/\" rel=\"nofollow\">⁠Sunsettradio Instagram⁠</a></p><br/><p><a href=\"https://www.facebook.com/profile.php?id&#61;100035288013297\" rel=\"nofollow\">⁠Facebook⁠</a></p><br/><p><a href=\"https://www.youtube.com/channel/UC74KzZEDspHTNvKIjwl1Kmw\" rel=\"nofollow\">⁠Youtube⁠</a></p><br/><p><a href=\"https://www.tiktok.com/&#64;vuthang_sunset?fbclid&#61;IwAR0knrgoPXX6bA6-p3CDXwSsq4LYsPdsHyUoLQuCtvrDzNYqgK_a63saGUc\" rel=\"nofollow\">⁠Tiktok</a></p><br/><p><br /></p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "duration_ms": 1207359,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/7mDLhCbOtKZAKZ0MDB756L"
+      },
+      "href": "https://api.spotify.com/v1/episodes/7mDLhCbOtKZAKZ0MDB756L",
+      "id": "7mDLhCbOtKZAKZ0MDB756L",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6765630000ba8a88e7795062d9ad1172033185",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67656300005f1f88e7795062d9ad1172033185",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6765630000f68d88e7795062d9ad1172033185",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "vi",
+      "languages": ["vi"],
+      "name": "Season 1 - Episode 6: Mẹ ơi - Chứng khoán không phải là trò lừa đảo!",
+      "release_date": "2023-07-30",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:7mDLhCbOtKZAKZ0MDB756L"
+    },
+    {
+      "season": 1,
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/1ILPwZkc8zxwLwm8UA6OHj/clip_416289_476289.mp3",
+      "description": "Trong chúng ta ai cũng có một đứa trẻ đang lớn. 18 năm đầu, chúng ta học cách làm người tử tế - 12 năm tiếp theo, ta học cách để trưởng thành. Hãy đi và trải nghiệm thật nhiều nhé!!  ------- Xem thêm về mình tại đây nhé: Sunsettradio Instagram Facebook Youtube Tiktok   ---   Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "html_description": "<p>Trong chúng ta ai cũng có một đứa trẻ đang lớn. 18 năm đầu, chúng ta học cách làm người tử tế - 12 năm tiếp theo, ta học cách để trưởng thành. Hãy đi và trải nghiệm thật nhiều nhé!!</p><br/><p><br /></p><br/><p>-------</p><br/><p>Xem thêm về mình tại đây nhé:</p><br/><p><a href=\"https://www.instagram.com/sun_sett_radio/\" rel=\"nofollow\">Sunsettradio Instagram</a></p><br/><p><a href=\"https://www.facebook.com/profile.php?id&#61;100035288013297\" rel=\"nofollow\">Facebook</a></p><br/><p><a href=\"https://www.youtube.com/channel/UC74KzZEDspHTNvKIjwl1Kmw\" rel=\"nofollow\">Youtube</a></p><br/><p><a href=\"https://www.tiktok.com/&#64;vuthang_sunset?fbclid&#61;IwAR0knrgoPXX6bA6-p3CDXwSsq4LYsPdsHyUoLQuCtvrDzNYqgK_a63saGUc\" rel=\"nofollow\">Tiktok</a></p><br/><p><br /></p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "duration_ms": 969786,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/6Nu7GEeTQ4EJAN9nfZPruE"
+      },
+      "href": "https://api.spotify.com/v1/episodes/6Nu7GEeTQ4EJAN9nfZPruE",
+      "id": "6Nu7GEeTQ4EJAN9nfZPruE",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6765630000ba8aa991a0776ef939c532a3a045",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67656300005f1fa991a0776ef939c532a3a045",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6765630000f68da991a0776ef939c532a3a045",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "vi",
+      "languages": ["vi"],
+      "name": "Season 1 - Episode 5: Khi tuổi trẻ là những chuyến đi !!",
+      "release_date": "2023-07-23",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:6Nu7GEeTQ4EJAN9nfZPruE"
+    },
+    {
+      "season": 1,
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/2GJViTQTWcrazftTXc7XxS/clip_552616_612616.mp3",
+      "description": "Chạy theo mối quan hệ, hay để chúng tự đuổi theo ?  Trong xã hội, các mối quan hệ vừa có thể là nguồn cơn của rắc rối, lại vừa có thể là cánh cửa cho cơ hội. Đối với người này, có thể mối quan hệ tốt là mối quan hệ lành mành - nhưng với người khác, mối quan hệ tốt là mối quan hệ thỏa mãn được mong muốn, nhu cầu hoặc thú vui.  Các mối quan hệ như kim tự tháp, rộng ở đáy và nhọn ở chóp. Vậy, bạn sẽ đứng ở góc nào để ngắm nhìn kim tự tháp đó với nhiều ánh mặt trời nhất?  Hãy tự đến và khám phá bản thân mình nhé! -------   Xem thêm về mình tại đây nhé: ⁠Sunsettradio Instagram⁠ ⁠Facebook⁠ ⁠Youtube⁠ ⁠Tiktok  Bài đọc tham khảo: Hậu quả của đi quá nhanh qua mqh Đặc điểm các mối quan hệ chớp nhoáng Khi người trẻ lười yêu Nghiên cứu của Brtish Council về thế hệ trẻ Việt Nam Sức khỏe xã hội tại Việt Nam - Unicef   ---   Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "html_description": "<p>Chạy theo mối quan hệ, hay để chúng tự đuổi theo ?</p><br/><p><br /></p><br/><p>Trong xã hội, các mối quan hệ vừa có thể là nguồn cơn của rắc rối, lại vừa có thể là cánh cửa cho cơ hội. Đối với người này, có thể mối quan hệ tốt là mối quan hệ lành mành - nhưng với người khác, mối quan hệ tốt là mối quan hệ thỏa mãn được mong muốn, nhu cầu hoặc thú vui.</p><br/><p><br /></p><br/><p>Các mối quan hệ như kim tự tháp, rộng ở đáy và nhọn ở chóp. Vậy, bạn sẽ đứng ở góc nào để ngắm nhìn kim tự tháp đó với nhiều ánh mặt trời nhất?</p><br/><p><br /></p><br/><p>Hãy tự đến và khám phá bản thân mình nhé!</p><br/><p>-------</p><br/><p><br/></p><br/><p>Xem thêm về mình tại đây nhé:</p><br/><p><a href=\"https://www.instagram.com/sun_sett_radio/\" rel=\"nofollow\">⁠Sunsettradio Instagram⁠</a></p><br/><p><a href=\"https://www.facebook.com/profile.php?id&#61;100035288013297\" rel=\"nofollow\">⁠Facebook⁠</a></p><br/><p><a href=\"https://www.youtube.com/channel/UC74KzZEDspHTNvKIjwl1Kmw\" rel=\"nofollow\">⁠Youtube⁠</a></p><br/><p><a href=\"https://www.tiktok.com/&#64;vuthang_sunset?fbclid&#61;IwAR0knrgoPXX6bA6-p3CDXwSsq4LYsPdsHyUoLQuCtvrDzNYqgK_a63saGUc\" rel=\"nofollow\">⁠Tiktok</a></p><br/><p><br /></p><br/><p>Bài đọc tham khảo:</p><br/><p><a href=\"https://exploringyourmind.com/the-consequences-of-moving-too-fast-in-a-relationship/\" rel=\"nofollow\">Hậu quả của đi quá nhanh qua mqh</a></p><br/><p><a href=\"https://www.marriage.com/advice/relationship/signs-your-relationship-is-moving-too-fast/#:~:text&#61;Moving%20too%20fast%20in%20a%20relationship%20can%20lead%20to%20various,re%20both%20comfortable%20and%20happy.\" rel=\"nofollow\">Đặc điểm các mối quan hệ chớp nhoáng</a></p><br/><p><a href=\"https://tienphong.vn/khi-nguoi-tre-luoi-yeu-post1526948.tpo\" rel=\"nofollow\">Khi người trẻ lười yêu</a></p><br/><p><a href=\"https://www.britishcouncil.vn/sites/default/files/nghien-cuu-the-he-tre-viet-nam.pdf\" rel=\"nofollow\">Nghiên cứu của Brtish Council về thế hệ trẻ Việt Nam</a></p><br/><p><a href=\"https://www.unicef.org/vietnam/media/1016/file/B%C3%A1o%20c%C3%A1o%20t%C3%B3m%20t%E1%BA%AFt.pdf\" rel=\"nofollow\">Sức khỏe xã hội tại Việt Nam - Unicef</a></p><br/><p><br /></p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "duration_ms": 1199441,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/5f5KWtL6Fk5IBJj26xJ5cc"
+      },
+      "href": "https://api.spotify.com/v1/episodes/5f5KWtL6Fk5IBJj26xJ5cc",
+      "id": "5f5KWtL6Fk5IBJj26xJ5cc",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6765630000ba8a8b4e933261b043879f266485",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67656300005f1f8b4e933261b043879f266485",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6765630000f68d8b4e933261b043879f266485",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "vi",
+      "languages": ["vi"],
+      "name": "Season 1 - Episode 4: Fast Relationship - Tôi được gì?",
+      "release_date": "2023-07-07",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:5f5KWtL6Fk5IBJj26xJ5cc"
+    },
+    {
+      "season": 1,
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/0gDAMO7H5cB4Yj7oaBl8Wu/clip_384225_444225.mp3",
+      "description": "Liệu bạn nhớ - ước mơ từ lúc bé của bạn là gì ?  Ngày xưa lúc còn nhỏ, mình từng ước mơ lái máy xúc. Một giấc mơ khá trẻ con, lớn lên dần theo thời gian, giấc mơ thay đổi đi theo hướng khác - không còn nhỏ bé như trước nữa. Và cho đến hiện tại, mình mong ước trở thành một người có thể làm tốt công việc trên con đường mình chọn, bên cạnh đó là đóng góp giá trị cho cộng đồng xung quanh.  Ước mơ đôi khi hơi vô định, nhưng hãy tự trưởng thành, \"lãnh đạo\" bản thân, tự dẫn dắt bạn cùng mọi người - chạm tới nó.  Trở thành người dẫn dắt, hay là được mọi người dẫn dắt - Lựa chọn là ở bạn!  ----- Xem thêm về mình tại đây nhé: ⁠Sunsettradio Instagram⁠ ⁠Facebook⁠ ⁠Youtube⁠ ⁠Tiktok Hãy tự lắng nghe và thấu hiểu bản thân nhé! Tháp maslow Cẩm nang quản lý Locus theory  ---   Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "html_description": "<p>Liệu bạn nhớ - ước mơ từ lúc bé của bạn là gì ?</p><br/><p><br /></p><br/><p>Ngày xưa lúc còn nhỏ, mình từng ước mơ lái máy xúc. Một giấc mơ khá trẻ con, lớn lên dần theo thời gian, giấc mơ thay đổi đi theo hướng khác - không còn nhỏ bé như trước nữa. Và cho đến hiện tại, mình mong ước trở thành một người có thể làm tốt công việc trên con đường mình chọn, bên cạnh đó là đóng góp giá trị cho cộng đồng xung quanh.</p><br/><p><br /></p><br/><p>Ước mơ đôi khi hơi vô định, nhưng hãy tự trưởng thành, &#34;lãnh đạo&#34; bản thân, tự dẫn dắt bạn cùng mọi người - chạm tới nó.</p><br/><p><br /></p><br/><p>Trở thành người dẫn dắt, hay là được mọi người dẫn dắt - Lựa chọn là ở bạn!</p><br/><p><br /></p><br/><p>-----</p><br/><p>Xem thêm về mình tại đây nhé:</p><br/><p><a href=\"https://www.instagram.com/sun_sett_radio/\" rel=\"nofollow\">⁠Sunsettradio Instagram⁠</a></p><br/><p><a href=\"https://www.facebook.com/profile.php?id&#61;100035288013297\" rel=\"nofollow\">⁠Facebook⁠</a></p><br/><p><a href=\"https://www.youtube.com/channel/UC74KzZEDspHTNvKIjwl1Kmw\" rel=\"nofollow\">⁠Youtube⁠</a></p><br/><p><a href=\"https://www.tiktok.com/&#64;vuthang_sunset?fbclid&#61;IwAR0knrgoPXX6bA6-p3CDXwSsq4LYsPdsHyUoLQuCtvrDzNYqgK_a63saGUc\" rel=\"nofollow\">⁠Tiktok</a></p><br/><p>Hãy tự lắng nghe và thấu hiểu bản thân nhé!</p><br/><p><a href=\"https://www.researchgate.net/publication/249964580_Maslow_and_the_Motivation_Hierarchy_Measuring_Satisfaction_of_the_Needs\" rel=\"nofollow\">Tháp maslow</a></p><br/><p><a href=\"https://www.google.com/search?sxsrf&#61;APwXEdfrdTuLxTTt734EuHz2L39giXAMwQ:1687605966643&amp;q&#61;c%E1%BA%A9m&#43;nang&#43;qu%E1%BA%A3n&#43;l%C3%BD&#43;harvard&#43;business&#43;review&amp;tbm&#61;isch&amp;sa&#61;X&amp;ved&#61;2ahUKEwj_haaR5tv_AhWDh1YBHco1AS8Q0pQJegQICRAB&amp;biw&#61;1707&amp;bih&#61;869&amp;dpr&#61;1.13#imgrc&#61;9Ymkm5Sj0xAXoM\" rel=\"nofollow\">Cẩm nang quản lý</a></p><br/><p><a href=\"https://www.youtube.com/watch?v&#61;8ZhoeSaPF-k\" rel=\"nofollow\">Locus theory</a></p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "duration_ms": 1732808,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/7cTvQ4SsZV4UOtQF5HSvqf"
+      },
+      "href": "https://api.spotify.com/v1/episodes/7cTvQ4SsZV4UOtQF5HSvqf",
+      "id": "7cTvQ4SsZV4UOtQF5HSvqf",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6765630000ba8ad549b99b8a70c3d8f36364cd",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67656300005f1fd549b99b8a70c3d8f36364cd",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6765630000f68dd549b99b8a70c3d8f36364cd",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "vi",
+      "languages": ["vi"],
+      "name": "Season 1 - Episode 3: Ước mơ lớn - Hãy là người dẫn dắt!",
+      "release_date": "2023-06-24",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:7cTvQ4SsZV4UOtQF5HSvqf"
+    },
+    {
+      "season": 1,
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/5MwZA9rIWrcmm2dF7bfjWe/clip_185387_245387.mp3",
+      "description": "\"Nếu đời cho bạn chọn mắt kính, vậy thì đừng dại dột đeo kính râm\"  Quá khứ là phần thuộc về mỗi người, không ai giống ai. Phần mà mỗi người đã từng đi qua có thể để lại cho mỗi cá nhân 1 bài học, 1 kỷ niệm, hoặc 1 nỗi đau. Có vài cách để viết lại nó, theo cách của bạn. Vậy nó là gì ?  Hãy lắng nghe và tự đưa ra câu trả lời cho mình nhé. ----- Xem thêm về mình tại đây nhé: ⁠Sunsettradio Instagram⁠ ⁠Facebook⁠ ⁠Youtube⁠ ⁠Tiktok Một số đầu bài đọc để bạn tham khảo: Our brain rewrite our memory Tâm sự giúp cải thiện và viết lại ký ức của bạn Nếu không thích tương lai, hãy viết lại quá khứ - Havard business review  ---   Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "html_description": "<p>&#34;Nếu đời cho bạn chọn mắt kính, vậy thì đừng dại dột đeo kính râm&#34;</p><br/><p><br /></p><br/><p>Quá khứ là phần thuộc về mỗi người, không ai giống ai. Phần mà mỗi người đã từng đi qua có thể để lại cho mỗi cá nhân 1 bài học, 1 kỷ niệm, hoặc 1 nỗi đau. Có vài cách để viết lại nó, theo cách của bạn. Vậy nó là gì ?</p><br/><p><br /></p><br/><p>Hãy lắng nghe và tự đưa ra câu trả lời cho mình nhé.</p><br/><p>-----</p><br/><p>Xem thêm về mình tại đây nhé:</p><br/><p><a href=\"https://www.instagram.com/sun_sett_radio/\" rel=\"nofollow\">⁠Sunsettradio Instagram⁠</a></p><br/><p><a href=\"https://www.facebook.com/profile.php?id&#61;100035288013297\" rel=\"nofollow\">⁠Facebook⁠</a></p><br/><p><a href=\"https://www.youtube.com/channel/UC74KzZEDspHTNvKIjwl1Kmw\" rel=\"nofollow\">⁠Youtube⁠</a></p><br/><p><a href=\"https://www.tiktok.com/&#64;vuthang_sunset?fbclid&#61;IwAR0knrgoPXX6bA6-p3CDXwSsq4LYsPdsHyUoLQuCtvrDzNYqgK_a63saGUc\" rel=\"nofollow\">⁠Tiktok</a></p><br/><p>Một số đầu bài đọc để bạn tham khảo:</p><br/><p><a href=\"https://www.npr.org/sections/health-shots/2014/02/04/271527934/our-brains-rewrite-our-memories-putting-present-in-the-past\" rel=\"nofollow\">Our brain rewrite our memory</a></p><br/><p><a href=\"https://www.nytimes.com/1984/09/18/science/confiding-in-others-improvess-health.html\" rel=\"nofollow\">Tâm sự giúp cải thiện và viết lại ký ức của bạn</a></p><br/><p><a href=\"https://hbr.org/2012/06/if-you-dont-like-your-future-r\" rel=\"nofollow\">Nếu không thích tương lai, hãy viết lại quá khứ - Havard business review</a></p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "duration_ms": 1622076,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/7F2dkMSg4G1wLqCihGTUfX"
+      },
+      "href": "https://api.spotify.com/v1/episodes/7F2dkMSg4G1wLqCihGTUfX",
+      "id": "7F2dkMSg4G1wLqCihGTUfX",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6765630000ba8ae0ba45655a4b34a29e96462a",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67656300005f1fe0ba45655a4b34a29e96462a",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6765630000f68de0ba45655a4b34a29e96462a",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "vi",
+      "languages": ["vi"],
+      "name": "Season 1 -Episode 2: Thay đổi tư duy, viết lại quá khứ",
+      "release_date": "2023-06-16",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:7F2dkMSg4G1wLqCihGTUfX"
+    },
+    {
+      "season": 1,
+      "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/64ep7lQViaeDp1L9kGHEk6/clip_0_60000.mp3",
+      "description": "Sunsett_radio, podcast chia sẻ về phát triển bản thân, tâm lý bên cạnh các chủ đề, lĩnh vực khác nhau trong đời sống. Câu chuyện và kiến thức liên quan tới tài chính, đầu tư. Hãy đến đây và khám phá những thứ hay ho trong ngóc ngách cuộc sống của bạn nhé! Sunsett_radio, bước chậm để lắng nghe bản thân mình.       ---   Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "html_description": "<p>Sunsett_radio, podcast chia sẻ về phát triển bản thân, tâm lý bên cạnh các chủ đề, lĩnh vực khác nhau trong đời sống. Câu chuyện và kiến thức liên quan tới tài chính, đầu tư. Hãy đến đây và khám phá những thứ hay ho trong ngóc ngách cuộc sống của bạn nhé!</p><br/><p>Sunsett_radio, bước chậm để lắng nghe bản thân mình.  <br/></p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/vu-nguyen-duc-thang/message",
+      "duration_ms": 340614,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/episode/5l3SpRIeQDOwIDvf9eM0rk"
+      },
+      "href": "https://api.spotify.com/v1/episodes/5l3SpRIeQDOwIDvf9eM0rk",
+      "id": "5l3SpRIeQDOwIDvf9eM0rk",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab6765630000ba8a4d47154f7e0874350c3abcb2",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67656300005f1f4d47154f7e0874350c3abcb2",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab6765630000f68d4d47154f7e0874350c3abcb2",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "is_externally_hosted": false,
+      "is_playable": true,
+      "language": "vi",
+      "languages": ["vi"],
+      "name": "Season 1 - Episode 1: Introduction podcast",
+      "release_date": "2023-06-15",
+      "release_date_precision": "day",
+      "resume_point": {
+        "fully_played": false,
+        "resume_position_ms": 0
+      },
+      "type": "episode",
+      "uri": "spotify:episode:5l3SpRIeQDOwIDvf9eM0rk"
+    }
+  ]
+}
