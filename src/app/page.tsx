@@ -22,11 +22,11 @@ const Home = () => {
       <section
         className="
         flex flex-col gap-4
-        fixed top-0 w-full h-full z-50 px-8 pt-12 pb-12 xl:w-[66%] lg:pl-8 lg:pr-8 lg:w-[calc(50% + 20vw)] md:pl-8 md:pr-8 md:w-[80%] sm:w-[70%]
+        fixed top-0 w-full h-full z-50 px-8 pt-12 pb-12 xl:w-[60%] lg:pl-8 lg:pr-8 lg:w-[calc(50% + 20vw)] md:pl-8 md:pr-8 md:w-[80%] sm:w-[70%]
         min-h-screen p-8 relative
         "
       >
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-4 justify-between">
           <div className="leading-none">
             <h2 className="dark:text-zinc-200 text-zinc-900 text-[44px] m-0 font-extrabold md:block hidden">
               Vu Nguyen Duc Thang
