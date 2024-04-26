@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect, useState } from "react";
 import Footer from "@/components/layout/footer";
@@ -17,6 +16,7 @@ export default function Blog() {
   const pathname = usePathname()
     .split("/")
     .slice(usePathname().split("/").indexOf("blogs") + 1)[0];
+  
   const [blogs, setBlogs] = useState<Post[]>([]);
   const client = createClient({
     apiVersion,
@@ -27,7 +27,9 @@ export default function Blog() {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const response = await readClient.fetch(`*[_type == "post"]`);
+      const response = await readClient.fetch(`*[_type == "post"
+      && slug.current == "${pathname}"
+      ]`);
       setBlogs(response);
     };
     fetchBlogs();
@@ -67,9 +69,6 @@ export default function Blog() {
               <ArrowLeft size={24} />
             </Button>
             <p className="dark:text-zinc-200 text-zinc-900 leading-none mb-3 text-4xl font-bold">
-              {/* {pathname
-                .replace(/_/g, " ")
-                .replace(/\b\w/g, (char) => char.toUpperCase())} */}
               Blogs
             </p>
           </div>
@@ -83,7 +82,6 @@ export default function Blog() {
                   <h2 className="">{post.title}</h2>
                   <p className="">{post.description}</p>
                   <p className="">{post._createdAt}</p>
-                  <p className="">{post.categories.categoryTitle}</p>
                   <p className="p-4">{post.author.name}</p>
                   <PortableText value={post.body} components={components} />
                 </div>
