@@ -5,8 +5,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { readClient } from "../../sanity/lib/client";
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
+import { FiExternalLink } from "react-icons/fi";
 
-const Home = (props: {}) => {
+const Home = () => {
   const [blogs, setBlogs] = useState<ICardProps[]>([]);
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -56,9 +58,21 @@ const Home = (props: {}) => {
                 key={post._id}
                 className="flex flex-col text-justify justify-between px-4 py-4 gap-4"
               >
-                <span className="flex flex-col gap-2 justify-between h-full">
+                <span className="flex flex-col gap-2 justify-between h-full relative">
                   <h2 className="font-bold">{post.title}</h2>
-                  <p className="mt-auto text-[12px]">{post._createdAt}</p>
+                  <div className="flex flex-row justify-between">
+                    <p className="mt-auto text-[12px]">{post._createdAt}</p>
+                    <Link
+                      href={
+                        post.slug
+                          ? `/blogs/${(post.slug as any).current}`
+                          : "/blogs"
+                      }
+                      target="_blank"
+                    >
+                      <FiExternalLink />
+                    </Link>
+                  </div>
                 </span>
               </Card>
             ))
