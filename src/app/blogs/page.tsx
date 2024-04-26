@@ -10,7 +10,6 @@ import { Card } from "@/components/ui/card";
 
 import { FiExternalLink } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
-import { BLOG_INFO_DICT } from "@/lib/general_info";
 import { ICardProps } from "@/lib/type/card";
 import { readClient } from "../../../sanity/lib/client";
 export default function Blogs() {
