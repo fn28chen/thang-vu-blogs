@@ -22,8 +22,7 @@ export const SampleImageComponent = ({
     <Image
       src={urlBuilder(client)
         .image(value)
-        .width(160)
-        .height(90)
+        .width(isInline ? 200 : width)
         .fit("max")
         .auto("format")
         .url()}
@@ -33,9 +32,7 @@ export const SampleImageComponent = ({
         display: "block",
         aspectRatio: 16 / 9,
       }}
-      width={160}
-      height={90}
-      className="w-[160px] h-[90px]"
+      className="flex items-center justify-center"
     />
   );
 };
