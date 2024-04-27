@@ -7,21 +7,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { readClient } from "../../../../sanity/lib/client";
 import { PortableText } from "@portabletext/react";
-import urlBuilder from "@sanity/image-url";
-import { createClient } from "next-sanity";
-import { getImageDimensions } from "@sanity/asset-utils";
-import { apiVersion, dataset, projectId, useCdn } from "../../../../sanity/env";
 import { LoadingPage } from "@/components/global/loading";
+import { SampleImageComponent } from "@/components/ui/imageComponent";
+
 export default function Blog() {
   const [blogs, setBlogs] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
-  const client = createClient({
-    apiVersion,
-    dataset,
-    projectId,
-    useCdn,
-  });
+  
   const pathname = usePathname()
     .split("/")
     .slice(usePathname().split("/").indexOf("blogs") + 1)[0];
@@ -37,32 +30,6 @@ export default function Blog() {
     fetchBlogs();
   }, []);
 
-  const SampleImageComponent = ({
-    value,
-    isInline,
-  }: {
-    value: any;
-    isInline: boolean;
-  }) => {
-    const { width, height } = getImageDimensions(value);
-    return (
-      <img
-        src={urlBuilder(client)
-          .image(value)
-          .width(isInline ? 100 : 800)
-          .fit("max")
-          .auto("format")
-          .url()}
-        alt={value.alt || " "}
-        loading="lazy"
-        style={{
-          display: isInline ? "inline-block" : "block",
-          aspectRatio: width / height,
-        }}
-        className="w-full h-full items-center justify-center"
-      />
-    );
-  };
   const components = {
     types: {
       image: SampleImageComponent,
@@ -80,7 +47,7 @@ export default function Blog() {
           <div>
             <div className="flex flex-row gap-4">
               <Button variant="outline" onClick={() => {
-                router.push("/blogs");
+                router.back();
               }}>
                 <ArrowLeft size={24} />
               </Button>

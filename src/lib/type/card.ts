@@ -10,7 +10,12 @@ export interface ICardProps {
   categories: {
     categoryTitle: string;
   };
-  
+  mainImage: {
+    asset: {
+      _ref: string;
+    };
+    alt: string;
+  };
 }
 
 export interface IProjCardProps extends ICardProps {

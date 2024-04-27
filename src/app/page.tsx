@@ -5,12 +5,14 @@ import Link from "next/link";
 import { readClient } from "../../sanity/lib/client";
 
 import { motion } from "framer-motion";
-import { fadeIn, fadeOut } from "@/utils/motion";
+import { slideInFromBot, fadeOut } from "@/utils/motion";
 
 import Footer from "@/components/layout/footer";
 import { ICardProps } from "@/lib/type/card";
 import { Card } from "@/components/ui/card";
 import { FiExternalLink } from "react-icons/fi";
+import { SampleImageComponent } from "@/components/ui/imageComponent";
+import BlogCard from "@/components/ui/BlogCard";
 
 const Home = () => {
   const [blogs, setBlogs] = useState<ICardProps[]>([]);
@@ -21,6 +23,7 @@ const Home = () => {
     };
     fetchBlogs();
   }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -46,8 +49,8 @@ const Home = () => {
             </h2>
             <p className="dark:text-zinc-300 text-zinc-800 mb-4 m-0"></p>
             <p className="dark:text-zinc-400 text-zinc-700 text-sm text-justify m-0">
-              Learning about web and trying to help out other devs in the
-              process. I love open source and writing about tech occasionally.
+              {/* Write something mentions about economics */}
+              Description in 2 lines
             </p>
           </div>
           <div className="min-w-fit">
@@ -64,27 +67,7 @@ const Home = () => {
         <div className="grid grid-rows-3 lg:grid lg:grid-cols-3 gap-4">
           {blogs?.length > 0 ? (
             blogs.map((post) => (
-              <Card
-                key={post._id}
-                className="flex flex-col text-justify justify-between px-4 py-4 gap-4 border-zinc-400 border-4 duration-200 hover:shadow-lg hover:-translate-y-1"
-              >
-                <span className="flex flex-col gap-2 justify-between h-full relative">
-                  <h2 className="font-bold">{post.title}</h2>
-                  <div className="flex flex-row justify-between">
-                    <p className="mt-auto text-[12px]">{post._createdAt}</p>
-                    <Link
-                      href={
-                        post.slug
-                          ? `/blogs/${(post.slug as any).current}`
-                          : "/blogs"
-                      }
-                      target="_blank"
-                    >
-                      <FiExternalLink />
-                    </Link>
-                  </div>
-                </span>
-              </Card>
+              <BlogCard key={post._id} ICardProps={post} />
             ))
           ) : (
             <div className="flex flex-row text-justify justify-between px-4 py-4 gap-4">
