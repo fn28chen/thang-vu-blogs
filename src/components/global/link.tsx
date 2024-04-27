@@ -8,7 +8,7 @@ export default function LinksComponent() {
         {links.map((link, index) => (
           <div
             key={index}
-            className="flex justify-between items-center dark:bg-zinc-900/60 bg-zinc-100/60 duration-200 p-2 rounded-lg hover:shadow-lg cursor-pointer w-full hover:-translate-y-1"
+            className="flex justify-between items-center dark:bg-zinc-900/60 bg-zinc-100/60 duration-200 p-2 rounded-lg cursor-pointer w-full hover:shadow-lg hover:-translate-y-1"
             onClick={() => window.open(link.url, "_blank")}
           >
             <p className="dark:text-zinc-300 text-zinc-800 m-0 text-sm lg:text-base md:text-base">

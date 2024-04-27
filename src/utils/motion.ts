@@ -66,3 +66,29 @@ export function delay(delay: number) {
     },
   };
 }
+
+export function fadeIn(delay: number) {
+  return {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: delay,
+        duration: 0.5,
+      },
+    },
+  };
+}
+
+export function fadeOut(delay: number) {
+  return {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 0,
+      transition: {
+        delay: delay,
+        duration: 0.5,
+      },
+    },
+  };
+}

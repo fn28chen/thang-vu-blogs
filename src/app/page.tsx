@@ -1,11 +1,15 @@
 "use client";
-import Footer from "@/components/layout/footer";
-import { ICardProps } from "@/lib/type/card";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { readClient } from "../../sanity/lib/client";
-import { Card } from "@/components/ui/card";
 import Link from "next/link";
+import { readClient } from "../../sanity/lib/client";
+
+import { motion } from "framer-motion";
+import { fadeIn, fadeOut } from "@/utils/motion";
+
+import Footer from "@/components/layout/footer";
+import { ICardProps } from "@/lib/type/card";
+import { Card } from "@/components/ui/card";
 import { FiExternalLink } from "react-icons/fi";
 
 const Home = () => {
@@ -18,7 +22,13 @@ const Home = () => {
     fetchBlogs();
   }, []);
   return (
-    <div className="w-full min-h-screen pt-4 px-8 flex flex-col justify-center items-center relative">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={fadeOut(0.5)}
+      className="w-full min-h-screen pt-4 px-8 flex flex-col justify-center items-center relative"
+    >
       <section
         className="
         flex flex-col gap-4
@@ -56,7 +66,7 @@ const Home = () => {
             blogs.map((post) => (
               <Card
                 key={post._id}
-                className="flex flex-col text-justify justify-between px-4 py-4 gap-4"
+                className="flex flex-col text-justify justify-between px-4 py-4 gap-4 border-zinc-400 border-4 duration-200 hover:shadow-lg hover:-translate-y-1"
               >
                 <span className="flex flex-col gap-2 justify-between h-full relative">
                   <h2 className="font-bold">{post.title}</h2>
@@ -87,7 +97,7 @@ const Home = () => {
         </div>
         <Footer />
       </section>
-    </div>
+    </motion.div>
   );
 };
 
