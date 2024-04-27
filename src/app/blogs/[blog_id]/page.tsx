@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Footer from "@/components/layout/footer";
 import { Post } from "../../../../sanity/lib/interface";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { readClient } from "../../../../sanity/lib/client";
@@ -15,6 +15,7 @@ import { LoadingPage } from "@/components/global/loading";
 export default function Blog() {
   const [blogs, setBlogs] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter();
   const client = createClient({
     apiVersion,
     dataset,
@@ -78,7 +79,9 @@ export default function Blog() {
         ) : (
           <div>
             <div className="flex flex-row gap-4">
-              <Button variant="outline" onClick={() => window.history.back()}>
+              <Button variant="outline" onClick={() => {
+                router.push("/blogs");
+              }}>
                 <ArrowLeft size={24} />
               </Button>
               <p className="dark:text-zinc-200 text-zinc-900 leading-none mb-3 text-4xl font-bold">

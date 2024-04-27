@@ -17,7 +17,7 @@ export default function Blogs() {
   const ref = useRef<HTMLDivElement>(null);
   const [openItem, setOpenItem] = useState<string>("");
   const [blogs, setBlogs] = useState<ICardProps[]>([]);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Handle Click Outside
   const handleClickOutside = () => {
@@ -35,6 +35,9 @@ export default function Blogs() {
     };
     fetchBlogs();
   }, []);
+
+  console.log(isLoading);
+
   return (
     <div className="w-full h-full p-8 flex flex-col items-center relative">
       <section className="flex flex-col w-full justify-between mt-16 lg:mt-0 md:mt-0 prose prose-a:no-underline gap-6 mb-12">
