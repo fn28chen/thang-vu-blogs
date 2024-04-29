@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/global/theme-provider";
 import NavBar from "@/components/layout/navbar";
 import Transition from "@/utils/transition";
+import MobileNavBar from "@/components/layout/mobileNavbar";
 
 const font = Space_Grotesk({ subsets: ["latin"] });
 
@@ -27,8 +28,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex justify-between w-full h-full">
-            <div className="fixed w-[6%] h-full z-50 lg:flex md:flex hidden">
+            <div className="fixed w-[6%] h-full z-50 hidden md:block">
               <NavBar />
+            </div>
+            <div className="fixed top-0 w-full z-50 block lg:hidden md:hidden px-8 pt-4 items-center justify-center">
+              <MobileNavBar/>
             </div>
             <Transition>{children}</Transition>
           </div>

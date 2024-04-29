@@ -9,10 +9,8 @@ import { slideInFromBot, fadeOut } from "@/utils/motion";
 
 import Footer from "@/components/layout/footer";
 import { ICardProps } from "@/lib/type/card";
-import { Card } from "@/components/ui/card";
-import { FiExternalLink } from "react-icons/fi";
-import { SampleImageComponent } from "@/components/ui/imageComponent";
 import BlogCard from "@/components/ui/BlogCard";
+import avatar from "../../public/avatar.jpg";
 
 const Home = () => {
   const [blogs, setBlogs] = useState<ICardProps[]>([]);
@@ -36,7 +34,7 @@ const Home = () => {
         className="
         flex flex-col gap-4
         fixed top-0 w-full h-full z-50 px-8 pt-12 pb-12 xl:w-[60%] lg:pl-8 lg:pr-8 lg:w-[calc(50% + 20vw)] md:pl-8 md:pr-8 md:w-[80%] sm:w-[70%]
-        min-h-screen p-8 relative
+        min-h-screen  relative
         "
       >
         <div className="flex flex-row gap-4 justify-between">
@@ -55,28 +53,33 @@ const Home = () => {
           </div>
           <div className="min-w-fit">
             <Image
-              src="https://avatars.githubusercontent.com/u/68690233?v=4"
+              src={avatar}
               alt="avatar"
-              className="rounded-full shadow-xl min-w-32 h-32 grayscale m-0"
+              className="rounded-full shadow-xl min-w-32 h-32 m-0"
               width={128}
               height={128}
             />
           </div>
         </div>
-        <span className="font-bold text-2xl">Recent Blogs</span>
-        <div className="grid grid-rows-3 lg:grid lg:grid-cols-3 gap-4">
-          {blogs?.length > 0 ? (
-            blogs.map((post) => (
-              <BlogCard key={post._id} ICardProps={post} />
-            ))
-          ) : (
-            <div className="flex flex-row text-justify justify-between px-4 py-4 gap-4">
-              <span className="flex flex-col gap-2">
-                <h2 className="font-bold text-2xl">No blogs yet</h2>
-                <p className="">Check back later</p>
-              </span>
+        <div></div>
+        <div className="flex flex-col gap-4">
+          <span className="font-bold text-2xl">Recent Blogs</span>
+          <div className="flex items-center justify-center">
+            <div className="grid grid-rows-3 lg:grid-cols-3 w-[80%] lg:w-full gap-4">
+              {blogs?.length > 0 ? (
+                blogs.map((post) => (
+                  <BlogCard key={post._id} ICardProps={post} />
+                ))
+              ) : (
+                <div className="flex flex-row text-justify justify-between px-4 py-4 gap-4">
+                  <span className="flex flex-col gap-2">
+                    <h2 className="font-bold text-2xl">No blogs yet</h2>
+                    <p className="">Check back later</p>
+                  </span>
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
         <Footer />
       </section>

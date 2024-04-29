@@ -39,8 +39,8 @@ export default function Blogs() {
   console.log(isLoading);
 
   return (
-    <div className="w-full h-full p-8 flex flex-col items-center relative">
-      <section className="flex flex-col w-full justify-between mt-16 lg:mt-0 md:mt-0 prose prose-a:no-underline gap-6 mb-12">
+    <div className="w-full h-full  flex flex-col items-center relative">
+      <section className="flex flex-col w-full justify-between mt-12 lg:mt-0 md:mt-0 prose prose-a:no-underline gap-6 mb-12">
         {isLoading ? (
           <div className="flex items-center justify-center">
             <LoadingPage />

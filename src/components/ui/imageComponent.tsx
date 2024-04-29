@@ -32,6 +32,8 @@ export const SampleImageComponent = ({
         display: "block",
         aspectRatio: 16 / 9,
       }}
+      width={isInline ? 200 : width}
+      height={height}
       className="flex items-center justify-center"
     />
   );

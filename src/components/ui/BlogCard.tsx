@@ -36,7 +36,8 @@ export default function BlogCard({
             }
             className="bottom-0"
           >
-              <h2>{ICardProps.title}</h2>
+              <h2 className="md:text-ellipsis 
+              ">{ICardProps.title}</h2>
           </Link>
           </div>
         </motion.div>
