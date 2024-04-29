@@ -13,8 +13,13 @@ export default function About() {
       transition={fadeOut(0.5)}
       className="w-full min-h-screen h-full flex flex-col items-center relative"
     >
-      <section className="mb-12 mt-12 flex flex-col w-full justify-center gap-6 text-justify md:mt-0 lg:mt-0">
-        <AboutMe />
+      <section className="mb-12 mt-8 flex flex-col w-full justify-center gap-6 text-justify md:mt-0 lg:mt-0">
+        <div
+          className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar text-justify px-2"
+          style={{ maxHeight: "80vh" }}
+        >
+          <AboutMe />
+        </div>
         <Footer />
       </section>
     </motion.div>

@@ -13,7 +13,7 @@ export default function Footer() {
           2024-present &#169;{" "}
           <a
             className="dark:text-zinc-300 dark:hover:text-zinc-200 text-zinc-800 hover:text-zinc-900 duration-300 underline decoration-dotted underline-offset-4"
-            href="https://github.com/phong28zk"
+            href="https://next-js-portfolio-one-zeta.vercel.app/"
             target={"_blank"}
             rel="noreferrer"
           >

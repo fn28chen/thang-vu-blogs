@@ -69,7 +69,7 @@ export default function MobileNavBar() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="min-h-full h-full flex dark:bg-zinc-800/50 bg-zinc-500/50 justify-center items-center py-1 rounded-lg shadow-xl gap-4 custom-scrollbar">
+    <div className="min-h-full h-full flex dark:bg-zinc-800 bg-zinc-500 justify-center items-center py-1 rounded-lg shadow-xl gap-4 custom-scrollbar">
       <div className="flex justify-evenly gap-4">
         {NavbarItems.map((item, index) => {
           return (

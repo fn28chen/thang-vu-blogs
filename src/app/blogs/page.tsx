@@ -40,7 +40,7 @@ export default function Blogs() {
 
   return (
     <div className="w-full h-full  flex flex-col items-center relative">
-      <section className="flex flex-col w-full justify-between mt-12 lg:mt-0 md:mt-0 prose prose-a:no-underline gap-6 mb-12">
+      <section className="flex flex-col w-full justify-between mt-8 lg:mt-0 md:mt-0 prose prose-a:no-underline gap-6 mb-12">
         {isLoading ? (
           <div className="flex items-center justify-center">
             <LoadingPage />
@@ -55,34 +55,39 @@ export default function Blogs() {
                 Random stats and stuff related to me.
               </p>
             </div>
-            <div className="flex flex-col gap-6">
-              {blogs?.length > 0 ? (
-                blogs.map((post) => (
-                  <Card
-                    key={post._id}
-                    className="flex flex-row text-justify justify-between px-4 py-4 gap-4"
-                  >
-                    <span className="flex flex-col gap-2">
-                      <h2 className="font-bold text-2xl">{post.title}</h2>
-                      <p className="">{post.description}</p>
-                      <p className="">{post._createdAt}</p>
-                    </span>
-                    <Link
-                      href={
-                        post.slug
-                          ? `/blogs/${(post.slug as any).current}`
-                          : "/blogs"
-                      }
+            <div
+              className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar text-justify px-2"
+              style={{ maxHeight: "80vh" }}
+            >
+              <div className="flex flex-col gap-6">
+                {blogs?.length > 0 ? (
+                  blogs.map((post) => (
+                    <Card
+                      key={post._id}
+                      className="flex flex-col md:flex-row text-justify justify-between px-4 py-4 gap-4"
                     >
-                      <Button>
-                        Read More <FiExternalLink />
-                      </Button>
-                    </Link>
-                  </Card>
-                ))
-              ) : (
-                <div className="p-4 text-red-500">No posts found</div>
-              )}
+                      <span className="flex flex-col gap-2">
+                        <h2 className="font-bold text-2xl">{post.title}</h2>
+                        <p className="">{post.description}</p>
+                        <p className="">{post._createdAt}</p>
+                      </span>
+                      <Link
+                        href={
+                          post.slug
+                            ? `/blogs/${(post.slug as any).current}`
+                            : "/blogs"
+                        }
+                      >
+                        <Button>
+                          Read More <FiExternalLink />
+                        </Button>
+                      </Link>
+                    </Card>
+                  ))
+                ) : (
+                  <div className="p-4 text-red-500">No posts found</div>
+                )}
+              </div>
             </div>
           </div>
         )}
