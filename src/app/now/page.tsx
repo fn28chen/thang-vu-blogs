@@ -3,8 +3,8 @@ import Footer from "@/components/layout/footer";
 import NowMD from "@/content/now-md.mdx";
 export default function Now() {
   return (
-    <div className="w-full min-h-screen h-full flex flex-col items-center relative">
-      <section className="prose mt-8 flex w-full flex-col justify-between text-justify gap-6 md:mt-0 lg:mt-0">
+    <div className="w-full min-h-screen h-full flex flex-col items-center">
+      <section className="prose mt-8 flex w-[80%] flex-col justify-between text-justify gap-6 md:mt-0 lg:mt-0">
         <div
           className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar text-justify px-2"
           style={{ maxHeight: "80vh" }}

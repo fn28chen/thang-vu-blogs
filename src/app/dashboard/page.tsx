@@ -59,10 +59,10 @@ export default function Dashboard() {
     );
 
   return (
-    <div className="w-full h-full  flex flex-col items-center relative">
-      <section className="flex flex-col w-full justify-between mt-8 lg:mt-0 md:mt-0 prose prose-a:no-underline gap-6 mb-12">
+    <div className="w-full h-full flex flex-col items-center relative">
+      <section className="flex flex-col w-[80%] justify-between mt-8 lg:mt-0 md:mt-0 prose prose-a:no-underline gap-6 mb-12">
         <div>
-          <h1 className="dark:text-zinc-200 text-zinc-900 leading-none mb-3 text-4xl font-bold">
+          <h1 className="dark:text-zinc-200 text-zinc-900 leading-none mb-3 text-[48px] font-bold">
             Dashboard
           </h1>
           <p className="dark:text-zinc-400 text-zinc-800 m-0 leading-tight">
