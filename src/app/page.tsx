@@ -12,7 +12,7 @@ import { ICardProps } from "@/lib/type/card";
 import BlogCard from "@/components/ui/BlogCard";
 import { Progress } from "@/components/ui/progress";
 import { SkeletonCard } from "@/components/ui/skeletonCard";
-
+import { SkeletonCardMobile } from "@/components/ui/skeletonCardMobile";
 import avatar from "../../public/avatar.jpg";
 
 const Home = () => {
@@ -24,13 +24,10 @@ const Home = () => {
       setTimeout(() => {
         setBlogs(response);
         setLoading(false);
-      }
-      , 1000);
+      }, 1000);
     };
     fetchBlogs();
   }, []);
-
-  
 
   return (
     <motion.div
@@ -58,11 +55,11 @@ const Home = () => {
             <p className="dark:text-zinc-300 text-zinc-800 mb-4 m-0"></p>
             <p className="dark:text-zinc-400 text-zinc-700 text-sm text-justify m-0">
               I am a software engineer, a web developer, and a tech enthusiast.
-              I love to learn and share my knowledge with others. Currently my job is
-              working as a full-stack developer at a startup in Vietnam. I am
-              passionate about web development, software engineering, and
-              technology. Always looking for new opportunities to learn and
-              grow as a developer. 
+              I love to learn and share my knowledge with others. Currently my
+              job is working as a full-stack developer at a startup in Vietnam.
+              I am passionate about web development, software engineering, and
+              technology. Always looking for new opportunities to learn and grow
+              as a developer.
             </p>
           </div>
           <div className="min-w-fit">
@@ -79,26 +76,26 @@ const Home = () => {
         <div className="flex flex-col gap-4">
           <span className="font-bold text-2xl">Recent Blogs</span>
           <div className="flex items-center justify-center">
-            <div className="grid grid-rows-3 lg:grid-cols-3 w-[80%] lg:w-full gap-4">
-              {loading ? (
-                <>
-                  <SkeletonCard />
-                  <SkeletonCard />
-                  <SkeletonCard />
-                </>
-              ) : blogs?.length > 0 ? (
-                blogs.map((post) => (
-                  <BlogCard key={post._id} ICardProps={post} />
-                ))
-              ) : (
-                <div className="flex flex-row text-justify justify-between px-4 py-4 gap-4">
-                  <span className="flex flex-col gap-2">
-                    <h2 className="font-bold text-2xl">No blogs yet</h2>
-                    <p className="">Check back later</p>
-                  </span>
+            {loading ? (
+              <div>
+                <div className="flex flex-col items-center justify-center gap-4 md:flex">
+                  <SkeletonCard className="md:block hidden" />
+                  <SkeletonCard className="md:block hidden" />
+                  <SkeletonCard className="md:block hidden" />
                 </div>
-              )}
-            </div>
+                <div className="flex flex-col items-center justify-center gap-4 md:hidden">
+                  <SkeletonCardMobile className="block md:hidden" />
+                  <SkeletonCardMobile className="block md:hidden" />
+                  <SkeletonCardMobile className="block md:hidden" />
+                </div>
+              </div>
+            ) : (
+              <div className="grid grid-rows-3 lg:grid-cols-3 w-[80%] lg:w-full gap-4">
+                {blogs.map((post) => (
+                  <BlogCard ICardProps={post} key={post._id} />
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <Footer />
