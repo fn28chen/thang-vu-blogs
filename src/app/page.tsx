@@ -78,7 +78,7 @@ const Home = () => {
           <div className="flex items-center justify-center">
             {loading ? (
               <div>
-                <div className="flex flex-row items-center justify-center gap-4 md:flex">
+                <div className="flex flex-row items-center justify-center gap-4">
                   <SkeletonCard className="md:block hidden" />
                   <SkeletonCard className="md:block hidden" />
                   <SkeletonCard className="md:block hidden" />
