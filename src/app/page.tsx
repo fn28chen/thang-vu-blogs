@@ -72,21 +72,20 @@ const Home = () => {
             />
           </div>
         </div>
-        <div></div>
         <div className="flex flex-col gap-4">
           <span className="font-bold text-2xl">Recent Blogs</span>
           <div className="flex items-center justify-center">
             {loading ? (
               <div>
                 <div className="flex flex-row items-center justify-center gap-4">
-                  <SkeletonCard className="md:block hidden" />
-                  <SkeletonCard className="md:block hidden" />
-                  <SkeletonCard className="md:block hidden" />
+                  <SkeletonCard className="lg:block hidden" />
+                  <SkeletonCard className="lg:block hidden" />
+                  <SkeletonCard className="lg:block hidden" />
                 </div>
-                <div className="flex flex-col items-center justify-center gap-4 md:hidden">
-                  <SkeletonCardMobile className="block md:hidden" />
-                  <SkeletonCardMobile className="block md:hidden" />
-                  <SkeletonCardMobile className="block md:hidden" />
+                <div className="flex flex-col items-center justify-center gap-4 lg:hidden">
+                  <SkeletonCardMobile className="block lg:hidden" />
+                  <SkeletonCardMobile className="block lg:hidden" />
+                  <SkeletonCardMobile className="block lg:hidden" />
                 </div>
               </div>
             ) : (

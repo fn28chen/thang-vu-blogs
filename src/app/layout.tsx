@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/global/theme-provider";
 import NavBar from "@/components/layout/navbar";
 import Transition from "@/utils/transition";
 import MobileNavBar from "@/components/layout/mobileNavbar";
-
 const font = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
