@@ -13,7 +13,6 @@ export default function Transition({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={fadeIn(0.5)}
       className="flex w-full px-1 md:px-2 lg:px-4 items-center justify-center pt-16 md:pt-0"
     >
       {children}

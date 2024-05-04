@@ -19,22 +19,23 @@ export const SampleImageComponent = ({
     useCdn,
   });
   return (
-    <Image
-      src={urlBuilder(client)
-        .image(value)
-        .width(isInline ? 200 : width)
-        .fit("max")
-        .auto("format")
-        .url()}
-      alt={value.alt || " "}
-      loading="lazy"
-      style={{
-        display: "block",
-        aspectRatio: 16 / 9,
-      }}
-      width={isInline ? 200 : width}
-      height={height}
-      className="flex items-center justify-center"
-    />
+    <div className="flex items-center justify-center pt-4">
+      <Image
+        src={urlBuilder(client)
+          .image(value)
+          .width(isInline ? 200 : width)
+          .fit("max")
+          .auto("format")
+          .url()}
+        alt={value.alt || " "}
+        loading="lazy"
+        style={{
+          display: "block",
+        }}
+        width={width}
+        height={height}
+        className="flex items-center justify-center"
+      />
+    </div>
   );
 };

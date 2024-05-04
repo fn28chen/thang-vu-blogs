@@ -10,17 +10,27 @@ import { slideInFromBot, fadeOut } from "@/utils/motion";
 import Footer from "@/components/layout/footer";
 import { ICardProps } from "@/lib/type/card";
 import BlogCard from "@/components/ui/BlogCard";
+import { Progress } from "@/components/ui/progress";
+import { SkeletonCard } from "@/components/ui/skeletonCard";
+
 import avatar from "../../public/avatar.jpg";
 
 const Home = () => {
   const [blogs, setBlogs] = useState<ICardProps[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
   useEffect(() => {
     const fetchBlogs = async () => {
       const response = await readClient.fetch(`*[_type == "post"]`);
-      setBlogs(response);
+      setTimeout(() => {
+        setBlogs(response);
+        setLoading(false);
+      }
+      , 1000);
     };
     fetchBlogs();
   }, []);
+
+  
 
   return (
     <motion.div
@@ -47,17 +57,21 @@ const Home = () => {
             </h2>
             <p className="dark:text-zinc-300 text-zinc-800 mb-4 m-0"></p>
             <p className="dark:text-zinc-400 text-zinc-700 text-sm text-justify m-0">
-              {/* Write something mentions about economics */}
-              Description in 2 lines
+              I am a software engineer, a web developer, and a tech enthusiast.
+              I love to learn and share my knowledge with others. Currently my job is
+              working as a full-stack developer at a startup in Vietnam. I am
+              passionate about web development, software engineering, and
+              technology. Always looking for new opportunities to learn and
+              grow as a developer. 
             </p>
           </div>
           <div className="min-w-fit">
             <Image
               src={avatar}
               alt="avatar"
-              className="rounded-full shadow-xl min-w-32 h-32 m-0"
-              width={128}
-              height={128}
+              className="rounded-full shadow-xl min-w-32 h-[180px] m-0"
+              width={180}
+              height={180}
             />
           </div>
         </div>
@@ -66,7 +80,13 @@ const Home = () => {
           <span className="font-bold text-2xl">Recent Blogs</span>
           <div className="flex items-center justify-center">
             <div className="grid grid-rows-3 lg:grid-cols-3 w-[80%] lg:w-full gap-4">
-              {blogs?.length > 0 ? (
+              {loading ? (
+                <>
+                  <SkeletonCard />
+                  <SkeletonCard />
+                  <SkeletonCard />
+                </>
+              ) : blogs?.length > 0 ? (
                 blogs.map((post) => (
                   <BlogCard key={post._id} ICardProps={post} />
                 ))
