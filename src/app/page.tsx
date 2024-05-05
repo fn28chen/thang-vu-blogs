@@ -35,16 +35,14 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={fadeOut(0.5)}
-      className="w-full min-h-screen pt-4 px-8 flex flex-col justify-center items-center relative"
+      className="w-full min-h-screen flex flex-col items-center relative md:max-w-[640px] lg:max-w-[800px]"
     >
-      <section
+      <div
         className="
-        flex flex-col gap-4
-        fixed top-0 w-full h-full z-50 px-8 pt-12 pb-12 xl:w-[60%] lg:pl-8 lg:pr-8 lg:w-[calc(50% + 20vw)] md:pl-8 md:pr-8 md:w-[80%] sm:w-[70%]
-        min-h-screen  relative
+        w-full px-8 pt-12 pb-12 lg:pl-8 lg:pr-8
         "
       >
-        <div className="flex flex-row gap-4 justify-between">
+        <section className="flex gap-10 justify-between">
           <div className="leading-none">
             <h2 className="dark:text-zinc-200 text-zinc-900 text-[44px] m-0 font-extrabold md:block hidden">
               Vu Nguyen Duc Thang
@@ -66,13 +64,13 @@ const Home = () => {
             <Image
               src={avatar}
               alt="avatar"
-              className="rounded-full shadow-xl min-w-32 h-[180px] m-0"
+              className="rounded-full shadow-xl min-w-32 h-[180px] m-0 hidden md:block"
               width={180}
               height={180}
             />
           </div>
-        </div>
-        <div className="flex flex-col gap-4">
+        </section>
+        <section className="flex flex-col gap-4 mt-12">
           <span className="font-bold text-2xl">Recent Blogs</span>
           <div className="flex items-center justify-center">
             {loading ? (
@@ -89,16 +87,16 @@ const Home = () => {
                 </div>
               </div>
             ) : (
-              <div className="grid grid-rows-3 lg:grid-cols-3 w-[80%] lg:w-full gap-4">
+              <div className="grid lg:grid-cols-12 lg:w-full gap-4">
                 {blogs.map((post) => (
                   <BlogCard ICardProps={post} key={post._id} />
                 ))}
               </div>
             )}
           </div>
-        </div>
+        </section>
         <Footer />
-      </section>
+      </div>
     </motion.div>
   );
 };

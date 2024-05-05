@@ -15,7 +15,7 @@ export default function BlogCard({
   return (
     <Card
       key={ICardProps._id}
-      className="flex flex-col text-justify justify-between px-4 py-4 gap-4 border-zinc-400 border-4 duration-200 hover:shadow-lg hover:-translate-y-1 relative overflow-hidden"
+      className="flex flex-col text-justify justify-between px-4 py-4 gap-4 border-zinc-400 border-4 duration-200 hover:shadow-lg hover:-translate-y-1 relative overflow-hidden lg:col-span-4"
     >
       <span className="flex flex-col gap-2 justify-between h-full">
         <div className="w-full filter hover:blur-[40px] transition-all duration-300 items-center justify-center">

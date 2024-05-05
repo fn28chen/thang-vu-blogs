@@ -26,12 +26,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="top-0 w-full block lg:hidden md:hidden items-center justify-center backdrop-blur-md absolute z-60">
+            <MobileNavBar/>
+          </div>
           <div className="flex justify-between w-full h-full relative">
-            <div className="fixed w-[6%] h-full z-50 hidden md:block">
+            <div className="w-[6%] h-full hidden md:block">
               <NavBar />
-            </div>
-            <div className="top-0 w-full block lg:hidden md:hidden items-center justify-center backdrop-blur-md absolute z-60">
-              <MobileNavBar/>
             </div>
             <Transition>{children}</Transition>
           </div>
