@@ -56,7 +56,7 @@ export default function Blogs() {
               </p>
             </div>
             <div
-              className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar text-justify px-2"
+              className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar  px-2"
               style={{ maxHeight: "80vh" }}
             >
               <div className="flex flex-col gap-6">
@@ -64,7 +64,7 @@ export default function Blogs() {
                   blogs.map((post) => (
                     <Card
                       key={post._id}
-                      className="flex flex-col md:flex-row text-justify justify-between px-4 py-4 gap-4"
+                      className="flex flex-col md:flex-row  justify-between px-4 py-4 gap-4"
                     >
                       <span className="flex flex-col gap-2">
                         <h2 className="font-bold text-2xl">{post.title}</h2>

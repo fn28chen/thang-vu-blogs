@@ -35,15 +35,11 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={fadeOut(0.5)}
-      className="w-full min-h-screen flex flex-col items-center relative md:max-w-[640px] lg:max-w-[800px]"
+      className="w-full min-h-screen flex flex-col items-center md:max-w-[640px] lg:max-w-[800px]"
     >
-      <div
-        className="
-        w-full px-8 pt-12 pb-12 lg:pl-8 lg:pr-8
-        "
-      >
+      <div className="w-full px-8 py-12">
         <section className="flex gap-10 justify-between">
-          <div className="leading-none">
+          <div>
             <h2 className="dark:text-zinc-200 text-zinc-900 text-[44px] m-0 font-extrabold md:block hidden">
               Vu Nguyen Duc Thang
             </h2>
@@ -51,7 +47,7 @@ const Home = () => {
               Thang Vu
             </h2>
             <p className="dark:text-zinc-300 text-zinc-800 mb-4 m-0"></p>
-            <p className="dark:text-zinc-400 text-zinc-700 text-sm text-justify m-0">
+            <p className="dark:text-zinc-400 text-zinc-700 text-sm  m-0">
               I am a software engineer, a web developer, and a tech enthusiast.
               I love to learn and share my knowledge with others. Currently my
               job is working as a full-stack developer at a startup in Vietnam.

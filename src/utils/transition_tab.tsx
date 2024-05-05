@@ -14,9 +14,9 @@ export default function TransitionTab({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       
-      className="min-h-screen flex flex-col justify-center items-center top-0 w-full h-full lg:w-[80%] md:w-[80%] px-4 pt-4 lg:px-8 lg:py-4 md:px-8 md:py-8"
+      className="px-8 py-12 w-full md:max-w-[640px] lg:max-w-[800px]"
     >
-      {children}
+        {children}
     </motion.div>
   );
 }

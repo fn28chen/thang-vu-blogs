@@ -25,6 +25,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         style={{
           color: "zinc",
           fontSize: "36px",
+          margin: "revert",
           fontWeight: "bold",
         }}
       >
@@ -35,6 +36,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <h3
         style={{
           color: "zinc",
+          margin: "revert",
           fontSize: "24px",
           fontWeight: "bold",
         }}
@@ -47,6 +49,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         style={{
           color: "zinc",
           fontSize: "18px",
+          margin: "revert",
           fontWeight: "bold",
         }}
       >
@@ -57,6 +60,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <p
         style={{
           color: "zinc",
+          margin: "revert",
           fontSize: "16px",
         }}
       >

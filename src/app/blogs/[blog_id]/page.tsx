@@ -59,7 +59,7 @@ export default function Blog() {
               </p>
             </div>
             <div
-              className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar text-justify px-2"
+              className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar  px-2"
               style={{ maxHeight: "80vh" }}
             >
               {blogs?.length > 0 ? (

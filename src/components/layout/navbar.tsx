@@ -69,7 +69,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="flex h-full min-h-full w-full flex-col items-center justify-start pt-12 z-10">
+    <nav className="flex h-full min-h-full w-full flex-col items-center justify-start pt-12 z-10">
       <div className="flex flex-col gap-4">
         {NavbarItems.map((item, index) => {
           return (
@@ -151,6 +151,6 @@ export default function NavBar() {
         </div>
       </div>
       <div className="mt-4 h-full border-r-2 border-zinc-500 dark:border-zinc-800"></div>
-    </div>
+    </nav>
   );
 }
