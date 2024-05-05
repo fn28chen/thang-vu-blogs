@@ -37,51 +37,52 @@ export default function Blog() {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center relative bottom-10">
-      <section className="flex flex-col w-full justify-between mt-8 lg:mt-0 md:mt-0 prose prose-a:no-underline gap-6 mb-12">
-        {isLoading ? (
-          <div className="flex items-center justify-center">
-            <LoadingPage />
-          </div>
-        ) : (
-          <div className="md:pt-16">
-            <div className="flex flex-row gap-4">
-              <Button
-                variant="outline"
-                onClick={() => {
-                  router.back();
-                }}
-              >
-                <ArrowLeft size={24} />
-              </Button>
-              <p className="dark:text-zinc-200 text-zinc-900 leading-none mb-3 text-4xl font-bold">
-                Blogs
-              </p>
-            </div>
-            <div
-              className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar text-justify px-2"
-              style={{ maxHeight: "80vh" }}
+    <section className="w-full">
+      {isLoading ? (
+        <div className="flex items-center justify-center">
+          <LoadingPage />
+        </div>
+      ) : (
+        <div>
+          <div className="flex flex-row gap-4 pb-12">
+            <Button
+              variant="outline"
+              onClick={() => {
+                router.back();
+              }}
             >
-              {blogs?.length > 0 ? (
-                blogs.map((post) => (
-                  <div key={post._id} className="p-4">
-                    <h2 className="">{post.title}</h2>
-                    <p className="">{post.description}</p>
-                    <p className="">{post._createdAt}</p>
-                    <p className="p-4">{post.author.name}</p>
-                    <div className="gap-6">
-                      <PortableText value={post.body} components={components} />
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <LoadingPage />
-              )}
-            </div>
+              <ArrowLeft size={24} />
+            </Button>
+            <p className="dark:text-zinc-200 text-zinc-900 leading-none mb-3 text-4xl font-bold">
+              {blogs && (blogs[0]?.title ?? "Blog")}
+            </p>
           </div>
-        )}
-        <Footer />
-      </section>
-    </div>
+          <div className="bg-white dark:bg-inherit">
+            {blogs ? (
+              <article id="blog" key={blogs[0]?._id}>
+                {blogs[0].description && <p>{blogs[0].description}</p>}
+                <p>{blogs[0]?._createdAt}</p>
+                {blogs[0]?.author && (
+                  <p>Author: {blogs[0]?.author.name ?? "Anonymous"}</p>
+                )}
+                <hr />
+                <div className="pt-12">
+                  <PortableText
+                    value={
+                      blogs[0].body ??
+                      "There is no content currently! The content will be updated soon."
+                    }
+                    components={components}
+                  />
+                </div>
+              </article>
+            ) : (
+              <LoadingPage />
+            )}
+          </div>
+        </div>
+      )}
+      <Footer />
+    </section>
   );
 }

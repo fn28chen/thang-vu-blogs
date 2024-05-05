@@ -11,17 +11,12 @@ export default function About() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={fadeOut(0.5)}
-      className="w-full min-h-screen h-full flex flex-col items-center relative"
+      className="w-full items-center"
     >
-      <section className="mb-12 mt-8 flex flex-col w-[80%] justify-center gap-6 text-justify md:mt-0 lg:mt-0">
-        <div
-          className="overflow-y-auto bg-white dark:bg-inherit custom-scrollbar text-justify px-2"
-          style={{ maxHeight: "80vh" }}
-        >
-          <AboutMe />
-        </div>
-        <Footer />
+      <section className="bg-white dark:bg-inherit custom-scrollbar">
+        <AboutMe />
       </section>
+      <Footer />
     </motion.div>
   );
 }
