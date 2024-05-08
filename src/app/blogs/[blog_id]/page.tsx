@@ -21,14 +21,27 @@ export default function Blog() {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const response = await readClient.fetch(`*[_type == "post"
-      && slug.current == "${pathname}"
-      ]`);
+      const response = await readClient.fetch(`*[_type=="post"]{
+        _id,
+        title,
+        slug,
+        _createdAt,
+        mainImage,
+        author->{
+          name,
+          image,
+        },
+        description,
+        body,
+        label,
+      }`);
       setBlogs(response);
       setIsLoading(false);
     };
     fetchBlogs();
   }, []);
+
+  // console.log(blogs);
 
   const components = {
     types: {
