@@ -107,7 +107,9 @@ export default function Blog() {
             {blogs ? (
               <article id="blog" key={blogs[0]?._id}>
                 {blogs[0].description && <p>{blogs[0].description}</p>}
-                <p>{blogs[0]?._createdAt}</p>
+                <p>
+                  Date: {new Date(blogs[0]?._createdAt).toDateString() ?? ""} - {new Date(blogs[0]?._createdAt).toLocaleTimeString(undefined, { hour12: false }) ?? ""}
+                </p>
                 {blogs[0]?.author && (
                   <p>Author: {blogs[0]?.author.name ?? "Anonymous"}</p>
                 )}

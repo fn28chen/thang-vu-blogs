@@ -97,7 +97,7 @@ article#blog * {
   top: 0;
   left: 0;
   right: 0;
-  height: 10px;
+  height: 6px;
   background: var(--background);
   transform-origin: 0%;
 }
