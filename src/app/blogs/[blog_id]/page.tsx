@@ -4,7 +4,7 @@ import Footer from "@/components/layout/footer";
 import { Post } from "../../../../sanity/lib/interface";
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowUp } from "lucide-react";
 import { readClient } from "../../../../sanity/lib/client";
 import { PortableText } from "@portabletext/react";
 import { LoadingPage } from "@/components/global/loading";
@@ -14,6 +14,7 @@ export default function Blog() {
   const [blogs, setBlogs] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
+  const [isVisible, setIsVisible] = useState(false);
 
   const pathname = usePathname()
     .split("/")
@@ -41,7 +42,28 @@ export default function Blog() {
     fetchBlogs();
   }, []);
 
-  // console.log(blogs);
+  // Show button when page is scrolled down 100vh
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > window.innerHeight * 2/3) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  // Scroll to top handler
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   const components = {
     types: {
@@ -87,6 +109,15 @@ export default function Blog() {
                     }
                     components={components}
                   />
+                  {isVisible && (
+                    <Button
+                      variant="outline"
+                      onClick={scrollToTop}
+                      className="fixed bottom-4 right-4"
+                    >
+                      <ArrowUp size={24} />
+                    </Button>
+                  )}
                 </div>
               </article>
             ) : (
