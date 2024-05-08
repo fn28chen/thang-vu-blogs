@@ -11,14 +11,17 @@ export default function Stats() {
 
     let years = Math.floor(diffDays / 365);
     let months = Math.floor((diffDays % 365) / 30);
+    let monthString = months.toString().padStart(2, "0");
     let days = diffDays - (years * 365 + months * 30);
 
     let hour = Math.floor((diffTime / (1000 * 60 * 60)) % 24);
+    let hourString = hour.toString().padStart(2, "0");
     let minute = Math.floor((diffTime / (1000 * 60)) % 60);
+    let minuteString = minute.toString().padStart(2, "0");
     let second = Math.floor((diffTime / 1000) % 60).toString().padStart(2, "0");
 
-    const date = `${years}y ${months}m ${days}d`;
-    const time = `${hour}:${minute}:${second}`;
+    const date = `${years}y ${monthString}m ${days}d`;
+    const time = `${hourString}:${minuteString}:${second}`;
 
     return `${date}\n${time}`;
   };

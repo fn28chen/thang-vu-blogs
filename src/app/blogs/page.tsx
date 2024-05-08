@@ -54,9 +54,7 @@ export default function Blogs() {
               Random stats and stuff related to me.
             </p>
           </div>
-          <div
-            className="mt-6 bg-white dark:bg-inherit"
-          >
+          <div className="mt-6 bg-white dark:bg-inherit">
             <div className="flex flex-col gap-6">
               {blogs?.length > 0 ? (
                 blogs.map((post) => (
@@ -67,7 +65,13 @@ export default function Blogs() {
                     <span className="flex flex-col gap-2">
                       <h2 className="font-bold text-2xl">{post.title}</h2>
                       <p className="">{post.description}</p>
-                      <p className="">{post._createdAt}</p>
+                      <p className="">
+                        {new Date(blogs[0]?._createdAt).toDateString() ?? ""} -{" "}
+                        {new Date(blogs[0]?._createdAt).toLocaleTimeString(
+                          undefined,
+                          { hour12: false }
+                        ) ?? ""}
+                      </p>
                     </span>
                     <Link
                       href={
