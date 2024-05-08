@@ -14,10 +14,13 @@ import { Progress } from "@/components/ui/progress";
 import { SkeletonCard } from "@/components/ui/skeletonCard";
 import { SkeletonCardMobile } from "@/components/ui/skeletonCardMobile";
 import avatar from "../../public/avatar.jpg";
+import { AnimatedText } from "@/components/ui/AnimatedText";
+import { useMediaQuery } from "usehooks-ts";
 
 const Home = () => {
   const [blogs, setBlogs] = useState<ICardProps[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const isDesktopOrLaptop = useMediaQuery("(min-deivce-width: 1024px)");
   useEffect(() => {
     const fetchBlogs = async () => {
       const response = await readClient.fetch(`*[_type == "post"]`);
@@ -40,13 +43,19 @@ const Home = () => {
       <div className="w-full px-8 py-12">
         <section className="flex gap-10 justify-between">
           <div>
-            <h2 className="dark:text-zinc-200 text-zinc-900 text-[44px] m-0 font-extrabold md:block hidden">
-              Vu Nguyen Duc Thang
-            </h2>
-            <h2 className="dark:text-zinc-200 text-zinc-900 text-[44px] m-0 font-extrabold md:hidden">
-              Thang Vu
-            </h2>
-            <p className="dark:text-zinc-300 text-zinc-800 mb-4 m-0"></p>
+            <AnimatedText
+              text={["Vu Nguyen Duc Thang"]}
+              className="dark:text-zinc-200 text-zinc-900 text-[44px] m-0 font-extrabold"
+              repeatDelay={10000}
+              animation={{
+                hidden: { opacity: 0, y: 20 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { staggerChildren: 0.1 },
+                },
+              }}
+            />
             <p className="dark:text-zinc-400 text-zinc-700 text-sm  m-0">
               I am a software engineer, a web developer, and a tech enthusiast.
               I love to learn and share my knowledge with others. Currently my

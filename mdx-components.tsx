@@ -6,15 +6,20 @@ import Image, { ImageProps } from "next/image";
 // React component you want, including inline styles,
 // components from other libraries, and more.
 
+const marginRevert = {
+  color: "zinc",
+  margin: "revert",
+  fontWeight: "bold",
+}
+
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
     h1: ({ children }) => (
       <h1
         style={{
-          color: "zinc",
+          ...marginRevert,
           fontSize: "48px",
-          fontWeight: "bold",
         }}
       >
         {children}
@@ -23,10 +28,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h2: ({ children }) => (
       <h2
         style={{
-          color: "zinc",
+          ...marginRevert,
           fontSize: "36px",
-          margin: "revert",
-          fontWeight: "bold",
         }}
       >
         {children}
@@ -35,10 +38,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h3: ({ children }) => (
       <h3
         style={{
-          color: "zinc",
-          margin: "revert",
+          ...marginRevert,
           fontSize: "24px",
-          fontWeight: "bold",
         }}
       >
         {children}
@@ -47,10 +48,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h4: ({ children }) => (
       <h4
         style={{
-          color: "zinc",
-          fontSize: "18px",
-          margin: "revert",
-          fontWeight: "bold",
+          ...marginRevert,
+          fontSize: "20px",
         }}
       >
         {children}
