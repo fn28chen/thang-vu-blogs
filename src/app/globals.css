@@ -98,7 +98,7 @@ article#blog * {
   left: 0;
   right: 0;
   height: 10px;
-  background: var(--red);
+  background: var(--background);
   transform-origin: 0%;
 }
 

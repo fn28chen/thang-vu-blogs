@@ -28,7 +28,8 @@ export default function Blog() {
   // Fetch the current blog
   useEffect(() => {
     const fetchBlogs = async () => {
-      const response = await readClient.fetch(`*[_type=="post" && slug.current=="${pathname}"]{
+      const response =
+        await readClient.fetch(`*[_type=="post" && slug.current=="${pathname}"]{
         _id,
         title,
         slug,
@@ -48,11 +49,10 @@ export default function Blog() {
     fetchBlogs();
   }, []);
 
-
   // Show button when page is scrolled down 66vh
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.screenY > window.innerHeight * 0.66) {
+      if (window.scrollY > window.innerHeight * 0.66) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -85,9 +85,11 @@ export default function Blog() {
           <LoadingPage />
         </div>
       ) : (
-        <motion.div
-          
-        >
+        <motion.div>
+          <motion.div
+            className="progress-bar"
+            style={{ scaleX: scrollYProgress }}
+          />
           <div className="flex flex-row gap-4 pb-12">
             <Button
               variant="outline"
