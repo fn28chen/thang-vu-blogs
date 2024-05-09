@@ -4,7 +4,7 @@ import NowMD from "@/content/now-md.mdx";
 export default function Now() {
   return (
     <section className="w-full">
-      <div className="bg-white dark:bg-inherit">
+      <div className="dark:bg-inherit">
         <NowMD />
       </div>
       <p className="text-[0.6rem] text-zinc-600 dark:text-zinc-400">

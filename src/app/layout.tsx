@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={`${font.className} bg-zinc-300 dark:bg-zinc-700`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
