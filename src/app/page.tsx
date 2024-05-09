@@ -46,7 +46,7 @@ const Home = () => {
             <AnimatedText
               text={["Vu Nguyen Duc Thang"]}
               className="dark:text-zinc-200 text-zinc-900 text-[44px] md:text-[52px] lg:text-[44px] m-0 font-extrabold"
-              repeatDelay={10000}
+              repeatDelay={5000}
               animation={{
                 hidden: { opacity: 0, y: 20 },
                 visible: {
