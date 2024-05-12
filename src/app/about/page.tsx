@@ -13,7 +13,7 @@ export default function About() {
       transition={fadeOut(0.5)}
       className="w-full items-center"
     >
-      <section className="bg-white dark:bg-inherit custom-scrollbar">
+      <section className="dark:bg-inherit custom-scrollbar">
         <AboutMe />
       </section>
       <Footer />

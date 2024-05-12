@@ -103,7 +103,7 @@ export default function Blog() {
               {blogs && (blogs[0]?.title ?? "Blog")}
             </p>
           </div>
-          <div className="bg-white dark:bg-inherit">
+          <div className="dark:bg-inherit">
             {blogs ? (
               <article id="blog" key={blogs[0]?._id}>
                 {blogs[0].description && <p>{blogs[0].description}</p>}
@@ -126,7 +126,7 @@ export default function Blog() {
                     <Button
                       variant="outline"
                       onClick={scrollToTop}
-                      className="fixed bottom-4 right-4"
+                      className="fixed bottom-4 right-4 bg-inherit dark:bg-current dark:text-zinc-200 text-zinc-900"
                     >
                       <ArrowUp size={24} />
                     </Button>
