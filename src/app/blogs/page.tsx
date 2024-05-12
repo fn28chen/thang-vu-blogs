@@ -54,7 +54,7 @@ export default function Blogs() {
               Random stats and stuff related to me.
             </p>
           </div>
-          <div className="mt-6 bg-white dark:bg-inherit">
+          <div className="mt-6 dark:bg-inherit">
             <div className="flex flex-col gap-6">
               {blogs?.length > 0 ? (
                 blogs.map((post) => (

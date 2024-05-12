@@ -126,9 +126,9 @@ export default function Blog() {
                     <Button
                       variant="outline"
                       onClick={scrollToTop}
-                      className="fixed bottom-4 right-4 bg-inherit dark:bg-current dark:text-zinc-200 text-zinc-900"
+                      className="fixed bottom-4 right-4 bg-inherit dark:bg-current bg-white dark:text-zinc-700 text-black"
                     >
-                      <ArrowUp size={24} />
+                      <ArrowUp size={24} className="text-black dark:text-white" />
                     </Button>
                   )}
                 </div>
