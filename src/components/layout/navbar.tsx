@@ -150,7 +150,7 @@ export default function NavBar() {
           </button>
         </div>
       </div>
-      <div className="mt-4 h-full border-r-2 border-zinc-500 dark:border-zinc-800"></div>
+      <div className="mt-4 h-full border-r-2 border-zinc-500 dark:border-zinc-300"></div>
     </nav>
   );
 }
