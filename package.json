@@ -21,6 +21,7 @@
     "@sanity/image-url": "1",
     "@sanity/vision": "3",
     "@types/mdx": "^2.0.13",
+    "@vercel/speed-insights": "^1.0.10",
     "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
