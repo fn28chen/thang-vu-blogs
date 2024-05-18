@@ -82,6 +82,7 @@ export default function Dashboard() {
           <AccordionItem value={"item-1"}>
             <AccordionTrigger
               onClick={() => setOpenItem(openItem === "item-1" ? "" : "item-1")}
+              className="text-zinc-800 dark:text-zinc-200"
             >
               Season 1
             </AccordionTrigger>
@@ -118,6 +119,7 @@ export default function Dashboard() {
           <AccordionItem value={"item-2"}>
             <AccordionTrigger
               onClick={() => setOpenItem(openItem === "item-2" ? "" : "item-2")}
+              className="text-zinc-800 dark:text-zinc-200"
             >
               Season 2
             </AccordionTrigger>{" "}

@@ -7,10 +7,10 @@ import Image, { ImageProps } from "next/image";
 // components from other libraries, and more.
 
 const marginRevert = {
-  color: "zinc",
+  color: "var(--text-color)",
   margin: "revert",
   fontWeight: "bold",
-}
+};
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -58,7 +58,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     p: ({ children }) => (
       <p
         style={{
-          color: "zinc",
+          color: "var(--text-color)",
           margin: "revert",
           fontSize: "16px",
         }}
@@ -69,7 +69,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     a: ({ children }) => (
       <a
         style={{
-          color: "zinc",
+          color: "var(--text-color)",
+          margin: "revert",
           textDecoration: "underline",
           textDecorationStyle: "wavy",
         }}

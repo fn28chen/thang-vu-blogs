@@ -42,6 +42,8 @@ body {
     --destructive-foreground: 0 0% 100%;
     --ring: 134 24% 27%;
     --radius: 0.5rem;
+    --text-color-light: zinc;
+  --text-color-dark: white;
   }
 
   .dark {
@@ -64,6 +66,7 @@ body {
     --destructive: 11 94% 60%;
     --destructive-foreground: 0 0% 0%;
     --ring: 134 24% 27%;
+    --text-color: var(--text-color-dark);
   }
 }
 
@@ -120,4 +123,9 @@ article#blog * {
 
 ::-webkit-scrollbar-corner {
   background: #000;
+}
+
+
+h1 {
+  margin: revert;
 }

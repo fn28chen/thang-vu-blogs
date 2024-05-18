@@ -62,7 +62,7 @@ export const AnimatedText = ({
   }, [isInView]);
 
   return (
-    <Wrapper className={className}>
+    <Wrapper className={className} object={{}}>
       <span className="sr-only">{text}</span>
       <motion.span
         ref={ref}

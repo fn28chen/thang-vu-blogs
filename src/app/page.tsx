@@ -76,7 +76,7 @@ const Home = () => {
           </div>
         </section>
         <section className="flex flex-col gap-4 mt-12">
-          <span className="font-bold text-2xl">Recent Blogs</span>
+          <span className="font-bold text-2xl text-black dark:text-white">Recent Blogs</span>
           <div className="flex items-center justify-center">
             {loading ? (
               <div>
@@ -92,9 +92,11 @@ const Home = () => {
                 </div>
               </div>
             ) : (
-              <div className="grid lg:grid-cols-12 lg:w-full gap-4">
+              <div className="grid grid-rows-12 lg:grid-cols-12 lg:w-full gap-4 items-center justify-center">
                 {blogs.map((post) => (
-                  <BlogCard ICardProps={post} key={post._id} />
+                  <div className="row-span-4 lg:col-span-4" key={post._id}>
+                  <BlogCard ICardProps={post} />
+                </div>
                 ))}
               </div>
             )}
