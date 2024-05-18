@@ -97,13 +97,13 @@ export default function Blog() {
                 router.back();
               }}
             >
-              <ArrowLeft size={24} />
+              <ArrowLeft size={24} className="text-black dark:text-white" />
             </Button>
             <p className="dark:text-zinc-200 text-zinc-900 leading-none mb-3 text-4xl font-bold">
               {blogs && (blogs[0]?.title ?? "Blog")}
             </p>
           </div>
-          <div className="dark:bg-inherit">
+          <div className="dark:bg-inherit text-black dark:text-white">
             {blogs ? (
               <article id="blog" key={blogs[0]?._id}>
                 {blogs[0].description && <p>{blogs[0].description}</p>}
