@@ -20,13 +20,18 @@ export default function BlogCard({
           ? `/blogs/${(ICardProps.slug as any).current}`
           : "/blogs"
       }
-      className="bottom-0"
+      className="bottom-0 group"
     >
       <Card
         key={ICardProps._id}
         title={ICardProps.title}
         icon={
-          <SampleImageComponent value={ICardProps.mainImage} isInline={false} />
+          <div className="inset-0 z-10">
+            <SampleImageComponent
+              value={ICardProps.mainImage}
+              isInline={false}
+            />
+          </div>
         }
       >
         <CanvasRevealEffect
@@ -34,6 +39,7 @@ export default function BlogCard({
           containerClassName="bg-black"
           dotSize={2}
         />
+        <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
       </Card>
     </Link>
   );
