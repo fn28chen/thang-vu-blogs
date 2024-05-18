@@ -92,9 +92,9 @@ const Home = () => {
                 </div>
               </div>
             ) : (
-              <div className="grid grid-cols-12 lg:w-full gap-4">
+              <div className="grid grid-rows-12 lg:grid-cols-12 lg:w-full gap-4 items-center justify-center">
                 {blogs.map((post) => (
-                  <div className="col-span-4" key={post._id}>
+                  <div className="row-span-4 lg:col-span-4" key={post._id}>
                   <BlogCard ICardProps={post} />
                 </div>
                 ))}
