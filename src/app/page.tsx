@@ -76,7 +76,7 @@ const Home = () => {
           </div>
         </section>
         <section className="flex flex-col gap-4 mt-12">
-          <span className="font-bold text-2xl">Recent Blogs</span>
+          <span className="font-bold text-2xl text-black dark:text-white">Recent Blogs</span>
           <div className="flex items-center justify-center">
             {loading ? (
               <div>
