@@ -32,6 +32,12 @@ const Home = () => {
     fetchBlogs();
   }, []);
 
+  const sortedBlogs = blogs.sort(
+    (a, b) =>
+      new Date(b._createdAt).getTime() - new Date(a._createdAt).getTime()
+  );
+  const firstThreeBlogs = sortedBlogs.slice(-3);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -76,7 +82,9 @@ const Home = () => {
           </div>
         </section>
         <section className="flex flex-col gap-4 mt-12">
-          <span className="font-bold text-2xl text-black dark:text-white">Recent Blogs</span>
+          <span className="font-bold text-2xl text-black dark:text-white">
+            Recent Blogs
+          </span>
           <div className="flex items-center justify-center">
             {loading ? (
               <div>
@@ -92,11 +100,11 @@ const Home = () => {
                 </div>
               </div>
             ) : (
-              <div className="grid grid-rows-12 lg:grid-cols-12 lg:w-full gap-4 items-center justify-center">
-                {blogs.map((post) => (
+              <div className="grid grid-rows-4 lg:grid-cols-12 lg:w-full gap-4 items-center justify-center">
+                {firstThreeBlogs.map((post) => (
                   <div className="row-span-4 lg:col-span-4" key={post._id}>
-                  <BlogCard ICardProps={post} />
-                </div>
+                    <BlogCard ICardProps={post} />
+                  </div>
                 ))}
               </div>
             )}

@@ -29,7 +29,6 @@ export default function BlogCard({
           <SampleImageComponent value={ICardProps.mainImage} isInline={false} />
         }
       >
-        {" "}
         <CanvasRevealEffect
           animationSpeed={6}
           containerClassName="bg-black"
