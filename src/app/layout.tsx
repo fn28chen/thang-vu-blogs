@@ -32,7 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <AuroraBackground>
+          <AuroraBackground className="bg-cover">
           <div className="top-0 w-full block lg:hidden md:hidden items-center justify-center relative z-60 bg-black">
             <MobileNavBar />
           </div>
