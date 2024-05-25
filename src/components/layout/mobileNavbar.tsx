@@ -105,7 +105,7 @@ export default function MobileNavBar() {
             </div>
           </button>
         )}
-        <button
+        {/* <button
           className="w-full flex justify-center items-center dark:bg-zinc-800 bg-zinc-700 dark:hover:bg-zinc-700 hover:bg-zinc-800 shadow hover:shadow-xl rounded hover:scale-110 duration-300 ease-in-out"
           //   onClick={() => router.push(item.slug)}
           // onClick={query.toggle}
@@ -113,7 +113,7 @@ export default function MobileNavBar() {
           <div className="p-2">
             <FiCommand size="1rem" className="text-zinc-100" />
           </div>
-        </button>
+        </button> */}
       </div>
     </nav>
   );
