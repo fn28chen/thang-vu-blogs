@@ -139,7 +139,7 @@ export default function NavBar() {
               </div>
             </button>
           )}
-          <button
+          {/* <button
             className="flex w-full items-center justify-center rounded bg-zinc-700 shadow duration-300 ease-in-out hover:scale-110 hover:bg-zinc-800 hover:shadow-xl dark:bg-zinc-800 dark:hover:bg-zinc-700"
             //   onClick={() => router.push(item.slug)}
             // onClick={query.toggle}
@@ -147,7 +147,7 @@ export default function NavBar() {
             <div className="p-2">
               <FiCommand size="1rem" className="text-zinc-100" />
             </div>
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="mt-4 h-full border-r-2 border-zinc-500 dark:border-zinc-300"></div>
